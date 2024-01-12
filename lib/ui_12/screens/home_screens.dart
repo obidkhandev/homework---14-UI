@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_12/compatations.dart';
 import 'package:modul_4_homework_obidxon/ui_12/widget/bottom_nav_bar.dart';
 import 'package:modul_4_homework_obidxon/ui_12/widget/category_card.dart';
+import 'package:modul_4_homework_obidxon/ui_12/widget/person_circle.dart';
 import 'package:modul_4_homework_obidxon/ui_12/widget/wishlist.dart';
 import 'package:modul_4_homework_obidxon/ui_3/constants.dart';
 
@@ -27,20 +28,7 @@ class HomePageUi12 extends StatelessWidget {
         ),
         titleTextStyle: kPlayfairDisplay,
         actions: [
-          Container(
-            height: 32,
-            width: 32,
-            margin: EdgeInsets.only(
-              right: 12,
-            ),
-            decoration: BoxDecoration(
-              color: kBackColor,
-              shape: BoxShape.circle,
-              image: DecorationImage(
-                image: AssetImage('assets/ui_12/images/Ellipse 3 (1).png'),
-              ),
-            ),
-          ),
+          PersonCircle(),
         ],
       ),
       body: Stack(

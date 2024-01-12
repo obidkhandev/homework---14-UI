@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:modul_4_homework_obidxon/ui_12/screens/search_page.dart';
 
 class BottomNavBar extends StatelessWidget {
   const BottomNavBar({
@@ -25,14 +26,29 @@ class BottomNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.home_filled),
+          GestureDetector(
+            onTap: () {},
+            child: IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.home_filled),
+            ),
           ),
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.search,
+          GestureDetector(
+            onDoubleTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return SearchPage();
+                  },
+                ),
+              );
+            },
+            child: IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.search,
+              ),
             ),
           ),
           IconButton(

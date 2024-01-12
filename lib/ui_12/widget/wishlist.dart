@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_12/compatations.dart';
+import 'package:modul_4_homework_obidxon/ui_12/widget/buy_card.dart';
 import 'package:modul_4_homework_obidxon/ui_12/widget/cart.dart';
 import 'package:modul_4_homework_obidxon/ui_12/widget/simple_line.dart';
 import 'package:modul_4_homework_obidxon/ui_3/constants.dart';
@@ -14,11 +15,12 @@ class Wishlist extends StatelessWidget {
       height: 450,
       width: 345,
       decoration: BoxDecoration(
-          color: Color.fromRGBO(255, 255, 255, 0.9),
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(40),
-            topRight: Radius.circular(40),
-          )),
+        color: Color.fromRGBO(255, 255, 255, 0.9),
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(40),
+          topRight: Radius.circular(40),
+        ),
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -54,20 +56,11 @@ class Wishlist extends StatelessWidget {
             tag: 'Wallet with chain',
           ),
           Spacer(),
-          Center(
-            child: Container(
-              alignment: Alignment.center,
-              height: 43,
-              width: 190,
-              color: kBackColor,
-              child: Text(
-                'Add all to cart'.toUpperCase(),
-                style: kWorkSansBlack.copyWith(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.white),
-              ),
-            ),
+          ButtonAddCard(
+            title: 'Add all to cart',
+            press: () {
+              BuyCard();
+            },
           ),
         ],
       ),
@@ -75,3 +68,35 @@ class Wishlist extends StatelessWidget {
   }
 }
 
+class ButtonAddCard extends StatelessWidget {
+  final String title;
+  final Function()? press;
+  const ButtonAddCard({
+    super.key,
+    required this.title,
+    this.press,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: press,
+      child: Center(
+        child: Container(
+          alignment: Alignment.center,
+          height: 43,
+          width: 190,
+          color: kBackColor,
+          child: Text(
+            title.toUpperCase(),
+            style: kWorkSansBlack.copyWith(
+              fontSize: 16,
+              fontWeight: FontWeight.w500,
+              color: Colors.white,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
