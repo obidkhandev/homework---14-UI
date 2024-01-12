@@ -14,5 +14,6 @@ final kPlayfairDisplay = TextStyle(
 final kWorkSansBlack = TextStyle(
   fontFamily: 'Work Sans',
   fontWeight: FontWeight.w500,
+  color: kBlackColor,
   fontSize: 14,
 );
