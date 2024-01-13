@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_12/compatations.dart';
+import 'package:modul_4_homework_obidxon/ui_12/screens/product_description.dart';
 import 'package:modul_4_homework_obidxon/ui_12/widget/bottom_nav_bar.dart';
 import 'package:modul_4_homework_obidxon/ui_12/widget/category_card.dart';
 import 'package:modul_4_homework_obidxon/ui_12/widget/person_circle.dart';
@@ -74,59 +75,71 @@ class HomePageUi12 extends StatelessWidget {
                 itemCount: 4,
                 physics: BouncingScrollPhysics(),
                 itemBuilder: (context, index) {
-                  return Container(
-                    padding: EdgeInsets.all(5),
-                    height: 230,
-                    width: 170,
-                    decoration: BoxDecoration(
-                      color: Color.fromRGBO(241, 241, 241, 1),
-                    ),
-                    child: Column(
-                      children: [
-                        Align(
-                          alignment: Alignment.topRight,
-                          child: Icon(
-                            Icons.favorite_border,
-                            size: 16,
+                  return GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return ProductDescriptionPage();
+                          },
+                        ),
+                      );
+                    },
+                    child: Container(
+                      padding: EdgeInsets.all(5),
+                      height: 230,
+                      width: 170,
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(241, 241, 241, 1),
+                      ),
+                      child: Column(
+                        children: [
+                          Align(
+                            alignment: Alignment.topRight,
+                            child: Icon(
+                              Icons.favorite_border,
+                              size: 16,
+                            ),
                           ),
-                        ),
-                        Image.asset(
-                          'assets/ui_12/images/image${index + 1}.png',
-                          height: 100,
-                          width: 100,
-                        ),
-                        if (index == 0)
+                          Image.asset(
+                            'assets/ui_12/images/image${index + 1}.png',
+                            height: 100,
+                            width: 100,
+                          ),
+                          if (index == 0)
+                            Text(
+                              'Artsy',
+                              style: kPlayfairDisplay.copyWith(fontSize: 18),
+                            ),
+                          if (index == 1)
+                            Text(
+                              'Berkely',
+                              style: kPlayfairDisplay.copyWith(fontSize: 18),
+                            ),
+                          if (index == 2)
+                            Text(
+                              'Capucinus',
+                              style: kPlayfairDisplay.copyWith(fontSize: 18),
+                            ),
+                          if (index == 3)
+                            Text(
+                              'Monogram',
+                              style: kPlayfairDisplay.copyWith(fontSize: 18),
+                            ),
+                          SizedBox(
+                            height: 5,
+                          ),
                           Text(
-                            'Artsy',
-                            style: kPlayfairDisplay.copyWith(fontSize: 18),
+                            'Buy Now'.toUpperCase(),
+                            style: kWorkSansBlack,
                           ),
-                        if (index == 1)
-                          Text(
-                            'Berkely',
-                            style: kPlayfairDisplay.copyWith(fontSize: 18),
+                          SizedBox(
+                            height: 5,
                           ),
-                        if (index == 2)
-                          Text(
-                            'Capucinus',
-                            style: kPlayfairDisplay.copyWith(fontSize: 18),
-                          ),
-                        if (index == 3)
-                          Text(
-                            'Monogram',
-                            style: kPlayfairDisplay.copyWith(fontSize: 18),
-                          ),
-                        SizedBox(
-                          height: 5,
-                        ),
-                        Text(
-                          'Buy Now'.toUpperCase(),
-                          style: kWorkSansBlack,
-                        ),
-                        SizedBox(
-                          height: 5,
-                        ),
-                        Container(height: 2, width: 88, color: kBackColor),
-                      ],
+                          Container(height: 2, width: 88, color: kBackColor),
+                        ],
+                      ),
                     ),
                   );
                 },
@@ -192,15 +205,14 @@ class HomePageUi12 extends StatelessWidget {
               ),
             ],
           ),
-          Positioned(
-            left: 15,
-            bottom: 0,
-            right: 15,
-            child: Wishlist(),
-          ),
+          // Positioned(
+          //   left: 15,
+          //   bottom: 0,
+          //   right: 15,
+          //   child: Wishlist(),
+          // ),
         ],
       ),
     );
   }
 }
-
