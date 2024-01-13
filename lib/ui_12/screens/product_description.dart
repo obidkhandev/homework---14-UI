@@ -7,7 +7,10 @@ import 'package:modul_4_homework_obidxon/ui_12/widget/simple_line.dart';
 import 'package:modul_4_homework_obidxon/ui_3/constants.dart';
 
 class ProductDescriptionPage extends StatefulWidget {
+  const ProductDescriptionPage({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _ProductDescriptionPageState createState() => _ProductDescriptionPageState();
 }
 
@@ -34,17 +37,17 @@ class _ProductDescriptionPageState extends State<ProductDescriptionPage>
         backgroundColor: Colors.white,
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(
+          icon: const Icon(
             Icons.menu,
             weight: 24,
             color: kBackColor,
           ),
         ),
-        title: Text(
+        title: const Text(
           'bagzz',
         ),
         titleTextStyle: kPlayfairDisplay,
-        actions: [
+        actions: const [
           PersonCircle(),
         ],
       ),
@@ -53,7 +56,7 @@ class _ProductDescriptionPageState extends State<ProductDescriptionPage>
         padding: const EdgeInsets.only(left: 12, right: 12, top: 30),
         child: Column(
           children: [
-            Align(
+            const Align(
               alignment: Alignment.topRight,
               child: Icon(Icons.favorite_border),
             ),
@@ -65,17 +68,17 @@ class _ProductDescriptionPageState extends State<ProductDescriptionPage>
                   width: 170,
                   fit: BoxFit.fill,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 20,
                 ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       'Artsy',
                       style: kPlayfairDisplay,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Text(
@@ -89,7 +92,7 @@ class _ProductDescriptionPageState extends State<ProductDescriptionPage>
                       style: kWorkSansBlack.copyWith(
                           fontSize: 14, color: kBlackColor.withOpacity(.5)),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Text(
@@ -99,15 +102,15 @@ class _ProductDescriptionPageState extends State<ProductDescriptionPage>
                         fontSize: 20,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
-                    ButtonAddCard(
+                    const ButtonAddCard(
                       title: 'Buy Now',
                       height: 30,
                       width: 97,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
                     Text(
@@ -116,7 +119,7 @@ class _ProductDescriptionPageState extends State<ProductDescriptionPage>
                         fontSize: 14,
                       ),
                     ),
-                    SimpleLine(
+                    const SimpleLine(
                       height: 2,
                       width: 94,
                       verticalMarjin: 5,
@@ -132,13 +135,13 @@ class _ProductDescriptionPageState extends State<ProductDescriptionPage>
               length: 3,
               child: TabBar(
                 controller: _controller,
-                labelStyle: TextStyle(
+                labelStyle: const TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.bold,
                 ),
                 indicatorColor: kBackColor,
                 indicatorSize: TabBarIndicatorSize.label,
-                labelPadding: EdgeInsets.only(
+                labelPadding: const EdgeInsets.only(
                   left: 0,
                 ),
                 // dividerColor: Colors.amber,
@@ -148,7 +151,7 @@ class _ProductDescriptionPageState extends State<ProductDescriptionPage>
                   );
                 },
                 labelColor: kBackColor,
-                tabs: [
+                tabs: const [
                   Tab(
                     text: 'Description',
                   ),
@@ -229,11 +232,11 @@ Premium Express once they become available.
                         ),
                       ),
                       // SizedBox(height: 30,),
-                      Spacer(),
+                      const Spacer(),
                       Text('Return policy',style: kWorkSansBlack.copyWith(
                           fontSize: 14,
                         ),),
-                        SizedBox(height: 10,),
+                        const SizedBox(height: 10,),
                       Text(
                         """
 Returns may be made by mail or in store.The 
@@ -314,7 +317,7 @@ the order is placed.
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
           ],

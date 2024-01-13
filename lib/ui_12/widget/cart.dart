@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_12/compatations.dart';
 import 'package:modul_4_homework_obidxon/ui_3/constants.dart';
 
-class Cart extends StatelessWidget {
+class MyCart extends StatelessWidget {
   final String productName;
   final String image;
   final String tag;
   final String productStyle;
-  const Cart({
+  const MyCart({
     super.key,
     required this.productName,
     required this.image,

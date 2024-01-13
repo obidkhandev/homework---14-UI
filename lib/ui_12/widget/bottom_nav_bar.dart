@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:modul_4_homework_obidxon/ui_12/screens/home_screens.dart';
 import 'package:modul_4_homework_obidxon/ui_12/screens/search_page.dart';
 
 class BottomNavBar extends StatelessWidget {
@@ -15,7 +16,7 @@ class BottomNavBar extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(69),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             offset: Offset(0, 14),
             blurRadius: 56,
@@ -27,13 +28,24 @@ class BottomNavBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+            },
             child: IconButton(
               onPressed: () {},
               icon: Icon(Icons.home_filled),
             ),
           ),
           GestureDetector(
+            onTap: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return HomePageUi12();
+                  },
+                ),
+              );
+            },
             onDoubleTap: () {
               Navigator.push(
                 context,

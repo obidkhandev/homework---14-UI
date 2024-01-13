@@ -4,7 +4,7 @@ import 'package:modul_4_homework_obidxon/ui_12/widget/person_circle.dart';
 import 'package:modul_4_homework_obidxon/ui_3/constants.dart';
 
 class SearchPage extends StatefulWidget {
-  SearchPage({Key? key}) : super(key: key);
+  const SearchPage({Key? key}) : super(key: key);
 
   @override
   State<SearchPage> createState() => _SearchPageState();
@@ -20,7 +20,7 @@ class _SearchPageState extends State<SearchPage> {
         backgroundColor: Colors.white,
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(
+          icon: const Icon(
             Icons.menu,
             weight: 24,
             color: kBackColor,
@@ -42,7 +42,7 @@ class _SearchPageState extends State<SearchPage> {
         ),
         child: Column(
           children: [
-            Align(
+            const Align(
               alignment: Alignment.topRight,
               child: Icon(Icons.clear),
             ),
@@ -60,7 +60,7 @@ class _SearchPageState extends State<SearchPage> {
                           fontWeight: FontWeight.w400,
                           color: kBackColor.withOpacity(.5),
                         ),
-                        enabledBorder: UnderlineInputBorder(
+                        enabledBorder: const UnderlineInputBorder(
                           borderSide: BorderSide(color: kBackColor),
                         ),
                       ),
@@ -70,7 +70,7 @@ class _SearchPageState extends State<SearchPage> {
                     onPressed: () {
                       _controller.clear();
                     },
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.clear,
                       color: Colors.grey,
                     ),

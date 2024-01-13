@@ -1,8 +1,12 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_12/compatations.dart';
 import 'package:modul_4_homework_obidxon/ui_12/screens/product_description.dart';
 import 'package:modul_4_homework_obidxon/ui_12/widget/bottom_nav_bar.dart';
 import 'package:modul_4_homework_obidxon/ui_12/widget/category_card.dart';
+import 'package:modul_4_homework_obidxon/ui_12/widget/my_header.dart';
+import 'package:modul_4_homework_obidxon/ui_12/widget/open_card.dart';
 import 'package:modul_4_homework_obidxon/ui_12/widget/person_circle.dart';
 import 'package:modul_4_homework_obidxon/ui_12/widget/wishlist.dart';
 import 'package:modul_4_homework_obidxon/ui_3/constants.dart';
@@ -18,7 +22,7 @@ class HomePageUi12 extends StatelessWidget {
         backgroundColor: Colors.white,
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(
+          icon: const Icon(
             Icons.menu,
             weight: 24,
             color: kBackColor,
@@ -35,38 +39,28 @@ class HomePageUi12 extends StatelessWidget {
       body: Stack(
         children: [
           ListView(
-            padding: EdgeInsets.only(left: 12, right: 12),
+            // padding: EdgeInsets.only(left: 12, right: 12),
             children: [
               SizedBox(
-                height: 220,
-                width: double.infinity,
-                child: ListView.builder(
+                height: 200,
+                width: double.maxFinite,
+                child: ListView(
                   scrollDirection: Axis.horizontal,
-                  itemCount: 2,
                   shrinkWrap: true,
-                  padding: EdgeInsets.only(top: 20),
-                  itemBuilder: (context, index) {
-                    return Container(
-                      height: 205,
-                      width: 380,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        image: DecorationImage(
-                          image: AssetImage(index == 0
-                              ? 'assets/ui_12/images/Group 58 (1).png'
-                              : 'assets/ui_12/images/Group 58 (2).png'),
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                    );
-                  },
+                  padding: const EdgeInsets.only(top: 20),
+                  children: const [
+                     OwnHeader(image: 'assets/ui_12/images/Group 58 (1).png'),
+                    // SizedBox(width: 12,),
+                    OwnHeader(image: 'assets/ui_12/images/Group 58 (2).png')
+                  ],
                 ),
               ),
               SizedBox(
                 height: 20,
               ),
               GridView.builder(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                padding: const EdgeInsets.only(left: 12, right: 12),
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   mainAxisSpacing: 15,
                   crossAxisSpacing: 15,
@@ -90,7 +84,7 @@ class HomePageUi12 extends StatelessWidget {
                       padding: EdgeInsets.all(5),
                       height: 230,
                       width: 170,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color.fromRGBO(241, 241, 241, 1),
                       ),
                       child: Column(
@@ -206,9 +200,9 @@ class HomePageUi12 extends StatelessWidget {
             ],
           ),
           // Positioned(
-          //   left: 15,
+          //   left: 12,
+          //   right: 12,
           //   bottom: 0,
-          //   right: 15,
           //   child: Wishlist(),
           // ),
         ],

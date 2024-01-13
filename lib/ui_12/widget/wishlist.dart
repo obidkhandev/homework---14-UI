@@ -12,10 +12,10 @@ class Wishlist extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(top: 10, left: 22, bottom: 30),
-      height: 450,
+      height: 512,
       width: 345,
-      decoration: BoxDecoration(
-        color: Color.fromRGBO(255, 255, 255, 0.9),
+      decoration: const BoxDecoration(
+        color: Color.fromRGBO(255, 255, 255, 0.8),
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(40),
           topRight: Radius.circular(40),
@@ -35,9 +35,9 @@ class Wishlist extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 40,
+            height: 80,
           ),
-          const Cart(
+          const MyCart(
             image: 'assets/ui_12/images/image4.png',
             productName: 'Berkely',
             productStyle: 'Style #36252 0YK0G 1000',
@@ -49,7 +49,7 @@ class Wishlist extends StatelessWidget {
               width: 290,
             ),
           ),
-          const Cart(
+          const MyCart(
             image: 'assets/ui_12/images/image3.png',
             productName: 'Berkely',
             productStyle: 'Style #36252 0YK0G 1000',
