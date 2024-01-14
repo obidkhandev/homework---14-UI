@@ -69,6 +69,8 @@ flutter:
     - assets/ui_3/icons/
     - assets/ui_3/images/
     - assets/ui_12/images/
+    - assets/ui_8/images/
+    - assets/ui_8/icons/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
