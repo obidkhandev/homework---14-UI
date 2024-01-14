@@ -4,6 +4,7 @@ import 'package:modul_4_homework_obidxon/ui_3/constants.dart';
 import 'package:modul_4_homework_obidxon/ui_8/components/rounded_button.dart';
 import 'package:modul_4_homework_obidxon/ui_8/constants.dart';
 import 'package:modul_4_homework_obidxon/ui_8/screen/login/login_screen.dart';
+import 'package:modul_4_homework_obidxon/ui_8/screen/sing_up/singup_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_8/screen/welcome/background.dart';
 
 class BodyUi8 extends StatelessWidget {
@@ -34,7 +35,7 @@ class BodyUi8 extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) {
-                  return LoginScreenUi8();
+                  return const LoginScreenUi8();
                 },),
               );
             },
@@ -43,7 +44,14 @@ class BodyUi8 extends StatelessWidget {
             text: 'singUp',
             textColor: kBackColor,
             color: kPrimaryLightColorUi8,
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) {
+                  return const SingUpUi8();
+                },),
+              );
+            },
           ),
         ],
       ),
