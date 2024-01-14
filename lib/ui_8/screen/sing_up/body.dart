@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:modul_4_homework_obidxon/ui_8/components/rounded_button.dart';
-import 'package:modul_4_homework_obidxon/ui_8/constants.dart';
 import 'package:modul_4_homework_obidxon/ui_8/screen/login/login_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_8/screen/sing_up/backround.dart';
 import 'package:modul_4_homework_obidxon/ui_8/screen/sing_up/local_icon.dart';
