@@ -4,6 +4,7 @@ import 'package:modul_4_homework_obidxon/ui_1/screens/home_page.dart';
 import 'package:modul_4_homework_obidxon/ui_12/screens/home_screens.dart';
 import 'package:modul_4_homework_obidxon/ui_2/screens/home_page.dart';
 import 'package:modul_4_homework_obidxon/ui_3/main.dart';
+import 'package:modul_4_homework_obidxon/ui_7/main.dart';
 import 'package:modul_4_homework_obidxon/ui_8/screen/welcome/welcome_page.dart';
 
 void main() {
@@ -30,7 +31,7 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-int screenIndex = 5;
+int screenIndex = 6;
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
@@ -42,6 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
       const MyAppUi_3(),
       const HomePageUi12(),
       const WelcomeScreenUi8(),
+      const MyAppUi7(),
       // const 
     ];
     return Scaffold(
