@@ -6,6 +6,7 @@ import 'package:modul_4_homework_obidxon/ui_2/screens/home_page.dart';
 import 'package:modul_4_homework_obidxon/ui_3/main.dart';
 import 'package:modul_4_homework_obidxon/ui_7/main.dart';
 import 'package:modul_4_homework_obidxon/ui_8/screen/welcome/welcome_page.dart';
+import 'package:modul_4_homework_obidxon/ui_9/screen/my_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,9 +42,10 @@ class _MyHomePageState extends State<MyHomePage> {
       const DetailPageUi_1(),
       const HomePageUi_2(),
       const MyAppUi_3(),
-      const HomePageUi12(),
-      const WelcomeScreenUi8(),
       const MyAppUi7(),
+      const WelcomeScreenUi8(),
+      const MyAppUi9(),
+      const HomePageUi12(),
       // const 
     ];
     return Scaffold(

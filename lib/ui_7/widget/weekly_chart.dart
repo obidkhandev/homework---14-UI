@@ -1,6 +1,5 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:modul_4_homework_obidxon/ui_2/constant.dart';
 import 'package:modul_4_homework_obidxon/ui_7/constants.dart';
 
 class WeeklyChart extends StatelessWidget {
