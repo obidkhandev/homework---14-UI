@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:modul_4_homework_obidxon/ui_7/constants.dart';
+import 'package:modul_4_homework_obidxon/ui_7/screen/detail_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_7/widget/info_card.dart';
 
 class HomeScreenUi7 extends StatelessWidget {
@@ -25,7 +26,7 @@ class HomeScreenUi7 extends StatelessWidget {
                   bottomRight: Radius.circular(50),
                 ),
               ),
-              child: const Wrap(
+              child: Wrap(
                 runSpacing: 20,
                 spacing: 20,
                 children: [
@@ -48,6 +49,16 @@ class HomeScreenUi7 extends StatelessWidget {
                     title: 'New Cases',
                     effectedNum: 95,
                     iconColor: Color(0xFF5856D6),
+                    press: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const DetailScreenUi7();
+                          },
+                        ),
+                      );
+                    },
                   ),
                 ],
               ),
