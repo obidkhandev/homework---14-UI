@@ -13,7 +13,7 @@ class TitleDurationAndFabBtnUi10 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(kDefaultPaddingUi10),
+      padding: const EdgeInsets.all(kDefaultPaddingUi10),
       child: Row(
         children: [
           Expanded(

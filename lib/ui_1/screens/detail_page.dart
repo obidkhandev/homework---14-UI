@@ -43,7 +43,7 @@ class DetailPageUi_1 extends StatelessWidget {
                       color: kBestSellerColor,
                       child: Text(
                         'BestSeller'.toUpperCase(),
-                        style: TextStyle(fontWeight: FontWeight.bold),
+                        style: const TextStyle(fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),
@@ -63,7 +63,7 @@ class DetailPageUi_1 extends StatelessWidget {
                       const SizedBox(
                         width: 5,
                       ),
-                      Text('18K'),
+                      const Text('18K'),
                       const SizedBox(
                         width: 20,
                       ),
@@ -105,7 +105,7 @@ class DetailPageUi_1 extends StatelessWidget {
                 child: Stack(
                   children: [
                     const Padding(
-                      padding: const EdgeInsets.all(20),
+                      padding:  EdgeInsets.all(20),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -148,7 +148,7 @@ class DetailPageUi_1 extends StatelessWidget {
                       right: 0,
                       bottom: 0,
                       child: Container(
-                        padding: EdgeInsets.all(20),
+                        padding: const EdgeInsets.all(20),
                         height: 100,
                         width: double.infinity,
                         decoration: BoxDecoration(
@@ -156,7 +156,7 @@ class DetailPageUi_1 extends StatelessWidget {
                           borderRadius: BorderRadius.circular(35),
                           boxShadow: [
                             BoxShadow(
-                              offset: Offset(0, 4),
+                              offset: const Offset(0, 4),
                               blurRadius: 35,
                               color: kTextColor.withOpacity(.1),
                             ),
@@ -165,12 +165,12 @@ class DetailPageUi_1 extends StatelessWidget {
                         child: Row(
                           children: [
                             Container(
-                              padding: EdgeInsets.all(10),
+                              padding: const EdgeInsets.all(10),
                               height: 56,
                               width: 80,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(30),
-                                color: Color(0xFFFFEDEE),
+                                color: const Color(0xFFFFEDEE),
                               ),
                               child: SvgPicture.asset(
                                   'assets/ui_1/icons/shopping-bag.svg'),

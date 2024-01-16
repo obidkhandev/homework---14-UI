@@ -17,7 +17,7 @@ class HomeScreenUi10 extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: buildAppBar(),
-        body: BodyUi10(),
+        body: const BodyUi10(),
       ),
     );
   }

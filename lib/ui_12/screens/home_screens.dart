@@ -17,7 +17,7 @@ class HomePageUi12 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavBar(),
+      bottomNavigationBar: const BottomNavBar(),
       appBar: AppBar(
         backgroundColor: Colors.white,
         leading: IconButton(
@@ -28,11 +28,11 @@ class HomePageUi12 extends StatelessWidget {
             color: kBackColor,
           ),
         ),
-        title: Text(
+        title: const Text(
           'bagzz',
         ),
         titleTextStyle: kPlayfairDisplay,
-        actions: [
+        actions: const [
           PersonCircle(),
         ],
       ),
@@ -55,7 +55,7 @@ class HomePageUi12 extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               GridView.builder(
@@ -67,7 +67,7 @@ class HomePageUi12 extends StatelessWidget {
                 ),
                 shrinkWrap: true,
                 itemCount: 4,
-                physics: BouncingScrollPhysics(),
+                physics: const BouncingScrollPhysics(),
                 itemBuilder: (context, index) {
                   return GestureDetector(
                     onTap: () {
@@ -75,13 +75,13 @@ class HomePageUi12 extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           builder: (context) {
-                            return ProductDescriptionPage();
+                            return const ProductDescriptionPage();
                           },
                         ),
                       );
                     },
                     child: Container(
-                      padding: EdgeInsets.all(5),
+                      padding: const EdgeInsets.all(5),
                       height: 230,
                       width: 170,
                       decoration: const BoxDecoration(
@@ -89,7 +89,7 @@ class HomePageUi12 extends StatelessWidget {
                       ),
                       child: Column(
                         children: [
-                          Align(
+                          const Align(
                             alignment: Alignment.topRight,
                             child: Icon(
                               Icons.favorite_border,
@@ -121,7 +121,7 @@ class HomePageUi12 extends StatelessWidget {
                               'Monogram',
                               style: kPlayfairDisplay.copyWith(fontSize: 18),
                             ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Text(

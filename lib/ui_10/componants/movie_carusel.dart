@@ -33,7 +33,7 @@ class _MovieCoruselState extends State<MovieCorusel> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: kDefaultPaddingUi10),
+      padding: const EdgeInsets.symmetric(vertical: kDefaultPaddingUi10),
       child: AspectRatio(
         aspectRatio: 0.85,
         child: PageView.builder(
@@ -42,7 +42,7 @@ class _MovieCoruselState extends State<MovieCorusel> {
               initalPage = value;
             });
           },
-          physics: ClampingScrollPhysics(),
+          physics: const ClampingScrollPhysics(),
           controller: _pageController,
           itemCount: movies.length,
           itemBuilder: (context, index) => buildMoviesSlider(index),
@@ -61,7 +61,7 @@ class _MovieCoruselState extends State<MovieCorusel> {
           value = (value * 0.038).clamp(-1, 1);
         }
         return AnimatedOpacity(
-          duration: Duration(microseconds: 350),
+          duration: const Duration(microseconds: 350),
           opacity: initalPage == index? 1 : 0.4,
           child: Transform.rotate(
             angle: math.pi * value,

@@ -62,7 +62,7 @@ class BackdropandRatingUi10 extends StatelessWidget {
                       ),
                       RichText(
                         text: TextSpan(
-                          style: TextStyle(color: Colors.black),
+                          style: const TextStyle(color: Colors.black),
                           children: [
                             TextSpan(
                                 style: const TextStyle(
@@ -95,9 +95,9 @@ class BackdropandRatingUi10 extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
-                        padding: EdgeInsets.all(6),
+                        padding: const EdgeInsets.all(6),
                         decoration: BoxDecoration(
-                          color: Color(0xFF51CF66),
+                          color: const Color(0xFF51CF66),
                           borderRadius: BorderRadius.circular(2),
                         ),
                         child: Text(
