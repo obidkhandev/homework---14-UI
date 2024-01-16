@@ -34,6 +34,7 @@ dependencies:
   path_provider: ^2.0.2
   flutter_staggered_grid_view: ^0.4.0
   fl_chart: ^0.60.0
+  animations: ^2.0.11
   # smooth_star_rating: ^1.1.1
 
   # The following adds the Cupertino Icons font to your application.
@@ -75,7 +76,10 @@ flutter:
     - assets/ui_8/icons/
     - assets/ui_9/images/
     - assets/ui_9/icons/
+    - assets/ui_10/images/
+    - assets/ui_10/icons/
     - assets/ui_12/images/
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

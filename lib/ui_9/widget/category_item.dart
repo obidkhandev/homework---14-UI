@@ -22,14 +22,14 @@ class CategoryItemUi9 extends StatelessWidget {
           children: [
             Text(
               title,
-              style: isActivate? TextStyle(
+              style: isActivate? const TextStyle(
                 color: kTextColorUi9,
                 fontWeight: FontWeight.bold,
-              ): TextStyle(fontSize: 12),
+              ):const TextStyle(fontSize: 12),
             ),
             if (isActivate)
               Container(
-                margin: EdgeInsets.symmetric(vertical: 5),
+                margin: const EdgeInsets.symmetric(vertical: 5),
                 height: 3,
                 width: 22,
                 decoration: BoxDecoration(

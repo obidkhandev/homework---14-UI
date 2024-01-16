@@ -6,7 +6,7 @@ AppBar detailsAppBar() {
       elevation: 0,
       leading: IconButton(
         onPressed: () {},
-        icon: Icon(
+        icon: const Icon(
           Icons.arrow_back_ios,
           color: Colors.white,
         ),

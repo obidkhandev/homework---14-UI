@@ -17,7 +17,7 @@ class ItemCardUi9 extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      margin: EdgeInsets.only(left: 20, right: 15, top: 20, bottom: 20),
+      margin: const EdgeInsets.only(left: 20, right: 15, top: 20, bottom: 20),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(10),
@@ -37,8 +37,8 @@ class ItemCardUi9 extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.only(bottom: 15),
-                  padding: EdgeInsets.all(25),
+                  margin: const EdgeInsets.only(bottom: 15),
+                  padding: const EdgeInsets.all(25),
                   decoration: BoxDecoration(
                     color: kPrimaryColorUi9.withOpacity(.13),
                     shape: BoxShape.circle,
@@ -49,12 +49,12 @@ class ItemCardUi9 extends StatelessWidget {
                   ),
                 ),
                 Text(title),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Text(
                   shopName,
-                  style: TextStyle(fontSize: 12),
+                  style: const TextStyle(fontSize: 12),
                 ),
               ],
             ),

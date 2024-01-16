@@ -32,11 +32,11 @@ class TitlePriceRatingUi9 extends StatelessWidget {
                 Row(
                   children: [
                     const Icon(Icons.star, color: kPrimaryColorUi9),
-                    Icon(Icons.star, color: kPrimaryColorUi9),
-                    Icon(Icons.star, color: kPrimaryColorUi9),
-                    Icon(Icons.star, color: kPrimaryColorUi9),
-                    Icon(Icons.star_border, color: kPrimaryColorUi9),
-                    SizedBox(width: 10),
+                    const Icon(Icons.star, color: kPrimaryColorUi9),
+                    const Icon(Icons.star, color: kPrimaryColorUi9),
+                    const Icon(Icons.star, color: kPrimaryColorUi9),
+                    const Icon(Icons.star_border, color: kPrimaryColorUi9),
+                    const SizedBox(width: 10),
                     Text('$numOfReviews reviews')
                   ],
                 )

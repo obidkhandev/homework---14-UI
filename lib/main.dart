@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_1/screens/detail_page.dart';
 import 'package:modul_4_homework_obidxon/ui_1/screens/home_page.dart';
+import 'package:modul_4_homework_obidxon/ui_10/screen/home_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_12/screens/home_screens.dart';
 import 'package:modul_4_homework_obidxon/ui_2/screens/home_page.dart';
 import 'package:modul_4_homework_obidxon/ui_3/main.dart';
@@ -32,7 +33,7 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-int screenIndex = 6;
+int screenIndex = 7;
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
@@ -45,6 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
       const MyAppUi7(),
       const WelcomeScreenUi8(),
       const MyAppUi9(),
+      const HomeScreenUi10(),
       const HomePageUi12(),
       // const 
     ];

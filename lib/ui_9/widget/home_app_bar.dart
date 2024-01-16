@@ -16,7 +16,7 @@ AppBar homeAppBar(BuildContext context) {
               .textTheme
               .titleLarge!
               .copyWith(fontWeight: FontWeight.bold),
-          children: [
+          children: const [
             TextSpan(
                 text: 'Punk', style: TextStyle(color: kSecondaryColorUi9)),
             TextSpan(

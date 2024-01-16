@@ -16,7 +16,6 @@ class OrderButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: size.width * 0.8,
-      // padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
           color: kPrimaryColorUi9, borderRadius: BorderRadius.circular(10)),
       child: Material(
@@ -29,15 +28,16 @@ class OrderButton extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SvgPicture.asset('assets/ui_9/icons/bag.svg'),
-                SizedBox(
+                const SizedBox(
                   width: 10,
                 ),
-                Text(
+                const Text(
                   'Order Now',
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      fontSize: 18),
+                      fontSize: 18,
+                    ),
                 ),
               ],
             ),

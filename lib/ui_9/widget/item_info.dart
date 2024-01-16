@@ -12,7 +12,7 @@ class ItemInfoUi9 extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       width: double.infinity,
       decoration: const BoxDecoration(
         color: Colors.white,
@@ -29,7 +29,7 @@ class ItemInfoUi9 extends StatelessWidget {
             productName: 'Cheese Burger',
             numOfReviews: 24,
           ),
-          Text(
+          const Text(
             'By the late 19th century, the vast grasslands of the Great Plains had been opened up for cattle ranching. This made it possible for many Americans to consume beef almost daily. The hamburger remains as one of the cheapest forms of beef in America.',
             style: TextStyle(height: 2),
           ),
