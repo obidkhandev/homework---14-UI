@@ -16,7 +16,7 @@ class Genres extends StatelessWidget {
       "Animation",
     ];
     return Container(
-      margin: EdgeInsets.symmetric(vertical: kDefaultPaddingUi10 / 2),
+      margin: const EdgeInsets.symmetric(vertical: kDefaultPaddingUi10 / 2),
       height: 36,
       child: ListView.builder(
         itemCount: genres.length,

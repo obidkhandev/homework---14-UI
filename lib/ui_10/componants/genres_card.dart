@@ -9,8 +9,8 @@ class GenresCardUi10 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      margin: EdgeInsets.only(left: kDefaultPaddingUi10),
-      padding: EdgeInsets.symmetric(vertical: kDefaultPaddingUi10 / 4,horizontal: kDefaultPaddingUi10),
+      margin: const EdgeInsets.only(left: kDefaultPaddingUi10),
+      padding: const EdgeInsets.symmetric(vertical: kDefaultPaddingUi10 / 4,horizontal: kDefaultPaddingUi10),
       decoration: BoxDecoration(
         border: Border.all(color: Colors.black26),
         borderRadius: BorderRadius.circular(20),
