@@ -77,7 +77,9 @@ class RecommendCourseCard extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.w500, fontSize: 8),
               ),
             ],
-          )
+          ),
+          SizedBox(height: 10,),
+          Text('\$24',style: TextStyle(color: Colors.black,fontWeight: FontWeight.w600),),
         ],
       ),
     );
