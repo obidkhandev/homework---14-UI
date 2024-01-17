@@ -4,6 +4,7 @@ import 'package:modul_4_homework_obidxon/ui_1/screens/home_page.dart';
 import 'package:modul_4_homework_obidxon/ui_10/screen/home_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_12/screens/home_screens.dart';
 import 'package:modul_4_homework_obidxon/ui_13/screens/on_boarding_screen.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/splash/splash_page.dart';
 import 'package:modul_4_homework_obidxon/ui_2/screens/home_page.dart';
 import 'package:modul_4_homework_obidxon/ui_3/main.dart';
 import 'package:modul_4_homework_obidxon/ui_7/main.dart';
@@ -17,13 +18,13 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return const MaterialApp(
-        title: 'HomeWork',
-        debugShowCheckedModeBanner: false,
-        home:  MyHomePage());
+      title: 'HomeWork',
+      debugShowCheckedModeBanner: false,
+      home: MyHomePage(),
+    );
   }
 }
 
@@ -34,13 +35,13 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-int screenIndex = 9;
+int screenIndex = 10;
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     List<Widget> screens = [
-      const HomePageUi1(), 
+      const HomePageUi1(),
       const DetailPageUi1(),
       const HomePageUi_2(),
       const MyAppUi_3(),
@@ -49,8 +50,8 @@ class _MyHomePageState extends State<MyHomePage> {
       const MyAppUi9(),
       const HomeScreenUi10(),
       const HomePageUi12(),
-      const OnBoardingScreenUi13()
-      // const 
+      const OnBoardingScreenUi13(),
+      const SplashScreenUi14(),
     ];
     return Scaffold(
       floatingActionButton: FloatingActionButton(
@@ -60,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
             setState(() {});
           }
         },
-        child:const Icon(Icons.next_plan),
+        child: const Icon(Icons.next_plan),
       ),
       body: screens[screenIndex],
     );
