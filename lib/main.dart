@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     List<Widget> screens = [
       const HomePageUi1(), 
-      const DetailPageUi_1(),
+      const DetailPageUi1(),
       const HomePageUi_2(),
       const MyAppUi_3(),
       const MyAppUi7(),

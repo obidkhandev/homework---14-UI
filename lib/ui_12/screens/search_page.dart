@@ -26,16 +26,16 @@ class _SearchPageState extends State<SearchPage> {
             color: kBackColor,
           ),
         ),
-        title: Text(
-          'bagzz',
+        title: const Text(
+          'bagzz'
         ),
         titleTextStyle: kPlayfairDisplay,
-        actions: [
+        actions: const [
           PersonCircle(),
         ],
       ),
       body: Padding(
-        padding: EdgeInsets.only(
+        padding: const EdgeInsets.only(
           left: 12,
           right: 12,
           top: 30,
@@ -46,37 +46,35 @@ class _SearchPageState extends State<SearchPage> {
               alignment: Alignment.topRight,
               child: Icon(Icons.clear),
             ),
-            Container(
-              child: Row(
-                children: [
-                  const SizedBox(width: 8),
-                  Expanded(
-                    child: TextField(
-                      controller: _controller,
-                      decoration: InputDecoration(
-                        hintText: 'Type here to search',
-                        hintStyle: kWorkSansBlack.copyWith(
-                          fontSize: 21,
-                          fontWeight: FontWeight.w400,
-                          color: kBackColor.withOpacity(.5),
-                        ),
-                        enabledBorder: const UnderlineInputBorder(
-                          borderSide: BorderSide(color: kBackColor),
-                        ),
+            Row(
+              children: [
+                const SizedBox(width: 8),
+                Expanded(
+                  child: TextField(
+                    controller: _controller,
+                    decoration: InputDecoration(
+                      hintText: 'Type here to search',
+                      hintStyle: kWorkSansBlack.copyWith(
+                        fontSize: 21,
+                        fontWeight: FontWeight.w400,
+                        color: kBackColor.withOpacity(.5),
+                      ),
+                      enabledBorder: const UnderlineInputBorder(
+                        borderSide: BorderSide(color: kBackColor),
                       ),
                     ),
                   ),
-                  IconButton(
-                    onPressed: () {
-                      _controller.clear();
-                    },
-                    icon: const Icon(
-                      Icons.clear,
-                      color: Colors.grey,
-                    ),
+                ),
+                IconButton(
+                  onPressed: () {
+                    _controller.clear();
+                  },
+                  icon: const Icon(
+                    Icons.clear,
+                    color: Colors.grey,
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ],
         ),

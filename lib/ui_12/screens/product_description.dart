@@ -51,7 +51,7 @@ class _ProductDescriptionPageState extends State<ProductDescriptionPage>
           PersonCircle(),
         ],
       ),
-      bottomNavigationBar: BottomNavBar(),
+      bottomNavigationBar: const BottomNavBar(),
       body: Padding(
         padding: const EdgeInsets.only(left: 12, right: 12, top: 30),
         child: Column(
@@ -128,8 +128,8 @@ class _ProductDescriptionPageState extends State<ProductDescriptionPage>
                 )
               ],
             ),
-            SizedBox(
-              height: 30,
+            const SizedBox(
+              height: 30
             ),
             DefaultTabController(
               length: 3,
@@ -163,7 +163,7 @@ class _ProductDescriptionPageState extends State<ProductDescriptionPage>
               ),
             ),
             Container(
-              margin: EdgeInsets.only(top: 20, bottom: 10),
+              margin: const EdgeInsets.only(top: 20, bottom: 10),
               width: double.infinity,
               height: 270,
               child: TabBarView(
@@ -180,15 +180,15 @@ class _ProductDescriptionPageState extends State<ProductDescriptionPage>
                           height: 1.3,
                           fontWeight: FontWeight.w400,
                           fontSize: 14,
-                          color: Color.fromRGBO(91, 91, 91, 1),
+                          color: const Color.fromRGBO(91, 91, 91, 1),
                         ),
                       ),
                       
-                      Spacer(),
+                      const Spacer(),
                       Text('Material & care',style: kWorkSansBlack.copyWith(
                           fontSize: 14,
                         ),),
-                        SizedBox(height: 10,),
+                        const SizedBox(height: 10),
                       Text(
                         """
 All products are made with carefully selected
@@ -205,7 +205,7 @@ product life.
                           height: 1.2,
                           fontWeight: FontWeight.w400,
                           fontSize: 14,
-                          color: Color.fromRGBO(91, 91, 91, 1),
+                          color: const Color.fromRGBO(91, 91, 91, 1),
                         ),
                       ),
                     ],
@@ -228,7 +228,7 @@ Premium Express once they become available.
                           letterSpacing: 1,
                           fontWeight: FontWeight.w400,
                           fontSize: 14,
-                          color: Color.fromRGBO(91, 91, 91, 1),
+                          color: const Color.fromRGBO(91, 91, 91, 1),
                         ),
                       ),
                       // SizedBox(height: 30,),
@@ -253,7 +253,7 @@ instructions provided in your digital invoice.
                           height: 1.3,
                           fontWeight: FontWeight.w400,
                           fontSize: 14,
-                          color: Color.fromRGBO(91, 91, 91, 1),
+                          color: const Color.fromRGBO(91, 91, 91, 1),
                         ),
                       ),
                     ],
@@ -272,7 +272,7 @@ We accepts the following forms of payment for online purchases:
                           height: 1.3,
                           fontWeight: FontWeight.w400,
                           fontSize: 14,
-                          color: Color.fromRGBO(91, 91, 91, 1),
+                          color: const Color.fromRGBO(91, 91, 91, 1),
                         ),
                       ),
                       Text(
@@ -287,11 +287,11 @@ Order Décor or DIY items.
                           height: 1.3,
                           fontWeight: FontWeight.w400,
                           fontSize: 14,
-                          color: Color.fromRGBO(91, 91, 91, 1),
+                          color: const Color.fromRGBO(91, 91, 91, 1),
                         ),
                       ),
                       
-                        SizedBox(height: 10,),
+                        const SizedBox(height: 10),
                       Text(
                         """
 The full transaction value will be charged to your 
@@ -309,7 +309,7 @@ the order is placed.
                           height: 1.3,
                           fontWeight: FontWeight.w400,
                           fontSize: 14,
-                          color: Color.fromRGBO(91, 91, 91, 1),
+                          color: const Color.fromRGBO(91, 91, 91, 1),
                         ),
                       ),
                     ],

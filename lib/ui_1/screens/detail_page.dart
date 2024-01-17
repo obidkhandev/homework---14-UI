@@ -4,8 +4,8 @@ import 'package:modul_4_homework_obidxon/ui_1/constants.dart';
 import 'package:modul_4_homework_obidxon/ui_1/widget/bestseller.dart';
 import 'package:modul_4_homework_obidxon/ui_1/widget/course_content.dart';
 
-class DetailPageUi_1 extends StatelessWidget {
-  const DetailPageUi_1({super.key});
+class DetailPageUi1 extends StatelessWidget {
+  const DetailPageUi1({super.key});
 
   @override
   Widget build(BuildContext context) {

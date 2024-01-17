@@ -128,7 +128,7 @@ class HomePageUi12 extends StatelessWidget {
                             'Buy Now'.toUpperCase(),
                             style: kWorkSansBlack,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Container(height: 2, width: 88, color: kBackColor),
@@ -138,7 +138,7 @@ class HomePageUi12 extends StatelessWidget {
                   );
                 },
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Center(
@@ -168,12 +168,12 @@ class HomePageUi12 extends StatelessWidget {
                 style: kPlayfairDisplay.copyWith(fontSize: 24),
                 // textAlign: TextAlign.left,
               ),
-              SizedBox(
-                height: 20,
+              const SizedBox(
+                height: 20
               ),
-              CategoryCard(),
-              SizedBox(
-                height: 30,
+              const CategoryCard(),
+              const SizedBox(
+                height: 30
               ),
               Center(
                 child: Container(
@@ -194,8 +194,8 @@ class HomePageUi12 extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
-                height: 50,
+              const SizedBox(
+                height: 50
               ),
             ],
           ),
