@@ -79,6 +79,7 @@ flutter:
     - assets/ui_10/images/
     - assets/ui_10/icons/
     - assets/ui_12/images/
+    - assets/ui_13/images/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -112,6 +113,9 @@ flutter:
     - family: WorkSans-Black
       fonts:
         - asset: assets/ui_12/fonts/WorkSans-Black.ttf
+    - family: Inter
+      fonts:
+        - asset: assets/ui_13/fonts/inter/Inter-Black.ttf
 
   #         weight: 700
   #
