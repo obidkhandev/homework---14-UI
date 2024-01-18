@@ -80,6 +80,7 @@ flutter:
     - assets/ui_10/icons/
     - assets/ui_12/images/
     - assets/ui_13/images/
+    - assets/ui_14/images/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -116,6 +117,15 @@ flutter:
     - family: Inter
       fonts:
         - asset: assets/ui_13/fonts/inter/Inter-Black.ttf
+    - family: Geometr415 Blk BT
+      fonts:
+        - asset: assets/ui_14/fonts/Geometric 415 Black BT.ttf
+    - family: SF UI Display
+      fonts:
+        - asset: assets/ui_14/fonts/sfuidisplay_heavy.ttf
+    - family: Gill Sans MT
+      fonts:
+        - asset: assets/ui_14/fonts/gillsansmt.ttf    
 
   #         weight: 700
   #

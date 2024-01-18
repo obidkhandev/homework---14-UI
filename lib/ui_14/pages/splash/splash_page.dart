@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:modul_4_homework_obidxon/ui_13/screens/on_boarding_screen.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/onboard/onboard_1.dart';
 
 class SplashScreenUi14 extends StatefulWidget {
   const SplashScreenUi14({super.key});
@@ -22,18 +22,18 @@ class _SplashScreenState extends State<SplashScreenUi14>
     _loaderResourse();
     controller = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 2),
+      duration: const Duration(seconds: 3),
     )..forward();
     animation = CurvedAnimation(parent: controller, curve: Curves.linear);
 
     Timer(
-      const Duration(seconds: 10),
+      const Duration(seconds: 2),
       () {
         Navigator.push(
           context,
           MaterialPageRoute(
             builder: (context) {
-              return OnBoardingScreenUi13();
+              return FirstOnBoardScreenUi14();
             },
           ),
         );
