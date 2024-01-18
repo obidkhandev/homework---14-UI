@@ -122,10 +122,11 @@ flutter:
         - asset: assets/ui_14/fonts/Geometric 415 Black BT.ttf
     - family: SF UI Display
       fonts:
-        - asset: assets/ui_14/fonts/sfuidisplay_heavy.ttf
+        - asset: assets/ui_14/fonts/sf-ui-display-medium-58646be638f96.otf
+          # weight: 100
     - family: Gill Sans MT
       fonts:
-        - asset: assets/ui_14/fonts/gillsansmt.ttf    
+        - asset: assets/ui_14/fonts/gillsansmt.ttf 
 
   #         weight: 700
   #
