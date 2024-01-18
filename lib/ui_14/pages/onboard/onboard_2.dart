@@ -1,16 +1,14 @@
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
-import 'package:modul_4_homework_obidxon/ui_14/pages/onboard/onboard_2.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/onboard/onboard_3.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/my_tab_scroll.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/onboard/widgets/on_board_big_title.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/onboard/widgets/on_board_head.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/onboard/widgets/on_board_small_text.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/rounded_button.dart';
 
-class FirstOnBoardScreenUi14 extends StatelessWidget {
-  const FirstOnBoardScreenUi14({super.key});
+class SecondOnBoardScreenUi14 extends StatelessWidget {
+  const SecondOnBoardScreenUi14({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,54 +20,54 @@ class FirstOnBoardScreenUi14 extends StatelessWidget {
           children: [
             OnBoardHeader(
               size: size,
-              image: 'assets/ui_14/images/afbea499038243 1.png',
+              image: 'assets/ui_14/images/7f47f9144194941 1.png',
               skipPress: () {},
             ),
             SizedBox(
               height: 30,
             ),
             Text(
-              'Life is short and the',
+              'It’s a big world out',
               style: kOnBoardTextSytle,
               textAlign: TextAlign.center,
             ),
             OnBoardBigTitlUi14(
-                image: 'assets/ui_14/images/Vector 2524.png',
-                actionText: 'wide',
-                blackText: 'world is'),
-            OnBoardSmallText(
-              text:'At Friends tours and travel, we customize reliable and trutworthy educational tours to destinations all over the world',
+              image: 'assets/ui_14/images/Vector 2524 (1).png',
+              actionText: 'explore',
+              blackText: 'there go',
             ),
+            OnBoardSmallText(
+                text:
+                    'To get the best of your adventure you just need to leave and go where you like. we are waiting for you'),
             SizedBox(
               height: 30,
             ),
             MyTabScroll(
-              color1: kPrimaryColorUi14,
-              color2: kBgColorUi14,
+              color1: kBgColorUi14,
+              color2: kPrimaryColorUi14,
               color3: kBgColorUi14,
-              width1: 35,
-              width2: 13,
+              width1: 13,
+              width2: 35,
               width3: 6,
             ),
             Spacer(),
             RoundedButtonUi14(
               size: size,
-              text: 'Get Started',
+              text: 'Next',
               press: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return SecondOnBoardScreenUi14();
+                      return ThirdOnBoardScreenUi14();
                     },
                   ),
                 );
               },
-            ),
+            )
           ],
         ),
       ),
     );
   }
 }
-

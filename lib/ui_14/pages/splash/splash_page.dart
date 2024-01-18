@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreenUi14>
     animation = CurvedAnimation(parent: controller, curve: Curves.linear);
 
     Timer(
-      const Duration(seconds: 2),
+      const Duration(seconds: 3),
       () {
         Navigator.push(
           context,
