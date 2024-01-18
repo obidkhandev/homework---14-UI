@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/onboard/onboard_3.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/singIn/sing_in_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/my_tab_scroll.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/onboard/widgets/on_board_big_title.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/onboard/widgets/on_board_head.dart';
@@ -21,7 +22,16 @@ class SecondOnBoardScreenUi14 extends StatelessWidget {
             OnBoardHeader(
               size: size,
               image: 'assets/ui_14/images/7f47f9144194941 1.png',
-              skipPress: () {},
+              skipPress: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return SingInScreenUi14();
+                    },
+                  ),
+                );
+              },
             ),
             SizedBox(
               height: 30,

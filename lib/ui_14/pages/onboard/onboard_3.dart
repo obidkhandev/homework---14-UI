@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/singIn/sing_in_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/my_tab_scroll.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/onboard/widgets/on_board_big_title.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/onboard/widgets/on_board_head.dart';
@@ -14,14 +15,23 @@ class ThirdOnBoardScreenUi14 extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.only(bottom: 30),
+        padding: const EdgeInsets.only(bottom: 30),
         child: Column(
           children: [
             OnBoardHeader(
               size: size,
               image:
                   'assets/ui_14/images/252a6624a42c117099537c7a1320256d 1.png',
-              skipPress: () {},
+              skipPress: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return SingInScreenUi14();
+                    },
+                  ),
+                );
+              },
             ),
             const SizedBox(height: 30),
             const Text(
@@ -38,9 +48,7 @@ class ThirdOnBoardScreenUi14 extends StatelessWidget {
               text:
                   'To get the best of your adventure you just need to leave and go where you like. we are waiting for you',
             ),
-            SizedBox(
-              height: 30
-            ),
+            SizedBox(height: 30),
             const MyTabScroll(
               color1: kBgColorUi14,
               color3: kPrimaryColorUi14,
@@ -53,7 +61,16 @@ class ThirdOnBoardScreenUi14 extends StatelessWidget {
             RoundedButtonUi14(
               size: size,
               text: 'Next',
-              press: () {},
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return SingInScreenUi14();
+                    },
+                  ),
+                );
+              },
             )
           ],
         ),
