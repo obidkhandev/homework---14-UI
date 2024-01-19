@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/home/home_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/arrow_icon.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/rounded_button.dart';
 
@@ -53,7 +53,6 @@ class VerificationScreen extends StatelessWidget {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              // crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 for (int i = 0; i < 4; i++)
                   Container(
@@ -82,8 +81,21 @@ class VerificationScreen extends StatelessWidget {
             SizedBox(
               height: 40,
             ),
-            RoundedButtonUi14(size: size, text: "Verify"),
-            Row(
+            RoundedButtonUi14(
+              size: size,
+              text: "Verify",
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return HomeScreenUi14();
+                    },
+                  ),
+                );
+              },
+            ),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
@@ -112,3 +124,4 @@ class VerificationScreen extends StatelessWidget {
     );
   }
 }
+
