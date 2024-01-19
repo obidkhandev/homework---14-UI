@@ -1,66 +1,275 @@
 import 'package:flutter/material.dart';
-import 'package:modul_4_homework_obidxon/ui_2/widgets/my_header.dart';
+import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 
-class HomeScreenUi14 extends StatelessWidget {
+class HomeScreenUi14 extends StatefulWidget {
   const HomeScreenUi14({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      bottomNavigationBar: ClipPath(
-        clipper: (),
-        child: Container(
-            height: 100,
-            width: double.infinity,
-            decoration: BoxDecoration(
-                color: Colors.red,
-                borderRadius: BorderRadius.only(
-                    // topRight: Radius.circular(50),
-                    // topLeft: Radius.elliptical(40, 100),
+  State<HomeScreenUi14> createState() => _HomeScreenUi14State();
+}
 
-                    ),
-                boxShadow: [
-                  BoxShadow(
-                      offset: Offset(-6, 0),
-                      blurRadius: 16,
-                      color: Color.fromRGBO(175, 184, 198, 0.12))
-                ]),
-            child: Row()),
-      ),
+int _index = 0;
+
+class _HomeScreenUi14State extends State<HomeScreenUi14> {
+  @override
+  Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    return Scaffold(
+      bottomNavigationBar: CustomBottomNavBar(),
       body: Padding(
         padding: const EdgeInsets.only(left: 20, top: 56),
         child: Column(
-          children: [],
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  height: 44,
+                  width: 118,
+                  padding: EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(22),
+                    color: Color.fromRGBO(247, 247, 249, 1),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      PersonCircle(),
+                      Text(
+                        'Leonardo',
+                        style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500,
+                            fontFamily: "SF UI Display"),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.only(right: 20),
+                  height: 44,
+                  width: 44,
+                  padding: EdgeInsets.all(5),
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: kLightGrayColor,
+                    image: DecorationImage(
+                      image:
+                          AssetImage("assets/ui_14/images/Notifications.png"),
+                    ),
+                  ),
+                )
+              ],
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Text(
+              'Explore the',
+              style: TextStyle(
+                fontFamily: "SF UI Display",
+                fontWeight: FontWeight.w300,
+                fontSize: 38,
+              ),
+            ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Beatiful ',
+                  style: TextStyle(
+                    fontFamily: "SF UI Display",
+                    fontWeight: FontWeight.w700,
+                    fontSize: 38,
+                  ),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'world!',
+                      style: TextStyle(
+                        fontFamily: "SF UI Display",
+                        fontWeight: FontWeight.w700,
+                        fontSize: 38,
+                        color: kActionColorUi14,
+                      ),
+                    ),
+                    Image.asset('assets/ui_14/images/Vector 2524 (2).png')
+                  ],
+                ),
+              ],
+            ),
+            const SizedBox(height: 20),
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "Best Destination",
+                  style: TextStyle(
+                    fontFamily: "SF UI Display",
+                    fontWeight: FontWeight.w600,
+                    fontSize: 20,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(right: 20),
+                  child: Text(
+                    'View all',
+                    style: TextStyle(
+                      fontFamily: "SF UI Display",
+                      fontWeight: FontWeight.w400,
+                      fontSize: 14,
+                      color: kPrimaryColorUi14,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 400,
+              width: double.infinity,
+              child: ListView(
+                padding: EdgeInsets.only(right: 20, top: 20),
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    height: 384,
+                    width: 268,
+                    padding: EdgeInsets.all(15),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(24),
+                        boxShadow: [
+                          BoxShadow(
+                              offset: Offset(0, 6),
+                              blurRadius: 16,
+                              color: Color.fromRGBO(180, 188, 201, 0.12))
+                        ]),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 286,
+                          width: 240,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            image: DecorationImage(
+                              fit: BoxFit.cover,
+                              image: AssetImage(
+                                  'assets/ui_14/images/Rectangle 27.png'),
+                            ),
+                          ),
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              'Niladri Reservoir',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontFamily: "SF UI Display",
+                                fontSize: 18,
+                                color: kTextColorUi14,
+                              ),
+                            ),
+                            Spacer(),
+                            Icon(
+                              Icons.star,
+                              color: Colors.amber,
+                              size: 20,
+                            ),
+                            Text(
+                              "4.7",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: 15,
+                                  color: kTextColorUi14),
+                            )
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.location_on_outlined,
+                              color: kSubTextColorUi14,
+                            ),
+                            Text(
+                              "Tekergat, Sunamgnj",
+                              style: TextStyle(
+                                fontFamily: "SF UI Display",
+                                color: kSubTextColorUi14,
+                                fontSize: 15,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
   }
 }
 
-//Add this CustomPaint widget to the Widget Tree
+class PersonCircle extends StatelessWidget {
+  const PersonCircle({
+    super.key,
+  });
 
-//Copy this CustomPainter code to the Bottom of the File
-
-@override
-void paint(Canvas canvas, Size size) {
-  Path path_0 = Path();
-  path_0.moveTo(0, 56.9997);
-  path_0.cubicTo(0, 42.0656, 10.9827, 29.3778, 25.7905, 27.4402);
-  path_0.cubicTo(142.999, 12.1035, 221.685, 12.1954, 348.854, 27.666);
-  path_0.cubicTo(363.809, 29.4853, 375, 42.2382, 375, 57.3033);
-  path_0.lineTo(375, 84.0001);
-  path_0.cubicTo(375, 100.569, 361.569, 114, 345, 114);
-  path_0.lineTo(30, 114);
-  path_0.cubicTo(13.4315, 114, 0, 100.569, 0, 84);
-  path_0.lineTo(0, 56.9997);
-  path_0.close();
-
-  Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-  paint_0_fill.color = Colors.white.withOpacity(1.0);
-  canvas.drawPath(path_0, paint_0_fill);
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 37,
+      width: 37,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: Color.fromRGBO(255, 234, 223, 1),
+        image: DecorationImage(
+          image: AssetImage('assets/ui_14/images/Group.png'),
+        ),
+      ),
+    );
+  }
 }
 
-// @override
-// bool shouldRepaint(covariant CustomPainter oldDelegate) {
-//   return true;
-// }
+class CustomBottomNavBar extends StatelessWidget {
+  const CustomBottomNavBar({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return BottomAppBar(
+      color: Colors.white,
+      shadowColor: Color.fromRGBO(175, 184, 198, 0.12),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          IconButton(icon: Icon(Icons.home), onPressed: () {}),
+          IconButton(icon: Icon(Icons.calendar_today), onPressed: () {}),
+          Container(
+            height: 50,
+            width: 50,
+            decoration: BoxDecoration(
+              color: kPrimaryColorUi14,
+              shape: BoxShape.circle,
+              boxShadow: [
+                BoxShadow(
+                    offset: Offset(0, 8),
+                    blurRadius: 20,
+                    color: Color.fromRGBO(13, 110, 253, 0.17)),
+              ],
+            ),
+            child: Icon(Icons.search, color: Colors.white),
+          ),
+          IconButton(icon: Icon(Icons.message), onPressed: () {}),
+          IconButton(icon: Icon(Icons.person), onPressed: () {}),
+        ],
+      ),
+    );
+  }
+}
