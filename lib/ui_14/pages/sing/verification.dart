@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/home/bottom_nav_bar.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/home/home_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/arrow_icon.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/rounded_button.dart';
@@ -11,6 +12,7 @@ class VerificationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      bottomNavigationBar: BottomNavBarUi14(),
       body: Padding(
         padding: EdgeInsets.only(left: 20, right: 20, top: 50),
         child: Column(
