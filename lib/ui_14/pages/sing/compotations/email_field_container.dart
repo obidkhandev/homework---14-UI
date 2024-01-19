@@ -20,7 +20,7 @@ class EmailFieldContainer extends StatelessWidget {
       height: 56,
       width: size.width * 0.9,
       decoration: BoxDecoration(
-        color: kLightGreyColor,
+        color: kLightGrayColor,
         borderRadius: BorderRadius.circular(14),
       ),
       child: child,

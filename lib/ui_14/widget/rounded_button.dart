@@ -4,10 +4,12 @@ import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 class RoundedButtonUi14 extends StatelessWidget {
   final String text;
   final Function()? press;
+  final double vertical;
   const RoundedButtonUi14({
     super.key,
     required this.size,
     required this.text,
+    this.vertical = 5,
     this.press,
   });
 
@@ -18,9 +20,10 @@ class RoundedButtonUi14 extends StatelessWidget {
     return GestureDetector(
       onTap: press,
       child: Container(
+        margin: EdgeInsets.symmetric(vertical: vertical),
         alignment: Alignment.center,
         height: 56,
-        width: size.width * 0.8,
+        width: size.width * 0.9,
         decoration: BoxDecoration(
             color: kPrimaryColorUi14, borderRadius: BorderRadius.circular(16)),
         child: Text(

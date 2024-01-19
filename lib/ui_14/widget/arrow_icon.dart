@@ -12,7 +12,7 @@ GestureDetector arrowIcon(BuildContext context) {
         height: 44,
         width: 44,
         decoration: BoxDecoration(
-          color: kLightGreyColor,
+          color: kLightGrayColor,
           shape: BoxShape.circle,
         ),
         child: Icon(Icons.arrow_back_ios_new),

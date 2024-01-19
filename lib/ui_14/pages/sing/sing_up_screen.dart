@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
-import 'package:modul_4_homework_obidxon/ui_14/pages/singIn/compotations/email_field_container.dart';
-import 'package:modul_4_homework_obidxon/ui_14/pages/singIn/compotations/rich_text_sing.dart';
-import 'package:modul_4_homework_obidxon/ui_14/pages/singIn/compotations/social_media.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/sing/compotations/email_field_container.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/sing/compotations/rich_text_sing.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/sing/compotations/social_media.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/sing/forgot_password.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/arrow_icon.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/rounded_button.dart';
 
-class SingInScreenUi14 extends StatefulWidget {
-  const SingInScreenUi14({super.key});
+class SingUpScreenUi14 extends StatefulWidget {
+  const SingUpScreenUi14({super.key});
 
   @override
-  State<SingInScreenUi14> createState() => _SingInScreenUi14State();
+  State<SingUpScreenUi14> createState() => _SingUpScreenUi14State();
 }
 
 bool _eyes = true;
 
-class _SingInScreenUi14State extends State<SingInScreenUi14> {
+class _SingUpScreenUi14State extends State<SingUpScreenUi14> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -26,18 +27,18 @@ class _SingInScreenUi14State extends State<SingInScreenUi14> {
             height: size.height,
             width: double.infinity,
             child: Padding(
-              padding:
-                  EdgeInsets.only(left: 20, right: 20, bottom: 50, top: 50),
+              padding: const EdgeInsets.only(
+                left: 20,
+                right: 20,
+                top: 50,
+                bottom: 60,
+              ),
               child: Column(
-                // crossAxisAlignment: CrossAxisAlignment.center,
-                // mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   arrowIcon(context),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  Text(
-                    'Sign in now',
+                  SizedBox(height: 20,),
+                  const Text(
+                    "Sign up now",
                     style: TextStyle(
                       fontFamily: 'SF UI Display',
                       fontSize: 26,
@@ -46,7 +47,7 @@ class _SingInScreenUi14State extends State<SingInScreenUi14> {
                   ),
                   SizedBox(height: 5),
                   Text(
-                    'Please sign in to continue our app',
+                    'Please fill the details and create account',
                     style: TextStyle(
                       fontFamily: 'SF UI Display',
                       fontSize: 16,
@@ -54,7 +55,12 @@ class _SingInScreenUi14State extends State<SingInScreenUi14> {
                       fontWeight: FontWeight.w400,
                     ),
                   ),
-                  // SizedBox(height: 20),
+                  EmailFieldContainer(
+                    size: size,
+                    child: const TextField(
+                      decoration: InputDecoration(border: InputBorder.none),
+                    ),
+                  ),
                   EmailFieldContainer(
                     size: size,
                     child: const TextField(
@@ -75,43 +81,44 @@ class _SingInScreenUi14State extends State<SingInScreenUi14> {
                             });
                           },
                           icon: const Icon(
-                            Icons.remove_red_eye,
+                            Icons.visibility_off_outlined,
                             color: kSubTextColorUi14,
                           ),
                         ),
                       ),
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   const Align(
-                    alignment: Alignment.topRight,
+                    alignment: Alignment.centerLeft,
                     child: Text(
-                      'Forget Password?',
+                      'Password must be 8 character',
                       style: TextStyle(
-                          fontFamily: "SF UI Display",
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500,
-                          color: kPrimaryColorUi14),
+                        fontFamily: "SF UI Display",
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                        color: kSubTextColorUi14,
+                      ),
                     ),
-                  ),
-                  const SizedBox(
-                    height: 20
                   ),
                   RoundedButtonUi14(
                     size: size,
-                    text: 'Sing In',
-                    press: () {},
+                    text: "Sing Up",
+                    vertical: 30,
+                    press: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return ForgotPasswordUi14();
+                          },
+                        ),
+                      );
+                    },
                   ),
-                  const SizedBox(
-                    height: 30
-                  ),
-                  MyRichTextSingPage(
-                    fristText: "Don’t have an account?",
-                    secondText: "Sing Up",
-                    press: () {},
-                  ),
-                  SizedBox(height: 10),
-                  Text(
+                  // SizedBox(height: 30),
+                  const MyRichTextSingPage(),
+                  const Text(
                     'Or Connect',
                     style: TextStyle(
                       fontFamily: "SF UI Display",
@@ -121,7 +128,7 @@ class _SingInScreenUi14State extends State<SingInScreenUi14> {
                     ),
                   ),
                   const Spacer(),
-                  const SocialMedia(),
+                  const SocialMedia()
                 ],
               ),
             ),
@@ -131,4 +138,3 @@ class _SingInScreenUi14State extends State<SingInScreenUi14> {
     );
   }
 }
-

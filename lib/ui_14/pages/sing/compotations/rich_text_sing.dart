@@ -1,15 +1,13 @@
-
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 
 class MyRichTextSingPage extends StatelessWidget {
-  final String fristText;
-  final String secondText;
+  final bool isHaveAccount;
   final Function()? press;
   const MyRichTextSingPage({
     super.key,
-    required this.fristText,
-    required this.secondText, this.press,
+    
+    this.press, this.isHaveAccount = false,
   });
 
   @override
@@ -19,7 +17,7 @@ class MyRichTextSingPage extends StatelessWidget {
       // crossAxisAlignment: ,
       children: [
         Text(
-          fristText,
+          isHaveAccount? "Don’t have an account?": "Already have an account",
           style: const TextStyle(
             fontFamily: "SF UI Display",
             fontWeight: FontWeight.w500,
@@ -30,7 +28,7 @@ class MyRichTextSingPage extends StatelessWidget {
         TextButton(
           onPressed: press,
           child: Text(
-            secondText,
+            isHaveAccount? "Sing Up" : "Sing In",
             style: TextStyle(
               fontFamily: "SF UI Display",
               fontWeight: FontWeight.w500,
