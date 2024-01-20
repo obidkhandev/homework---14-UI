@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
-import 'package:modul_4_homework_obidxon/ui_14/pages/message/chat_image.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/message/chat_image_online.dart';
 
 class ChatCard extends StatelessWidget {
   final String image;
@@ -27,18 +27,18 @@ class ChatCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 20),
-      child: Row(
-        children: [
-          ChatImageAndOnline(
-            image: image,
-            color: onlineColor,
-          ),
-          SizedBox(width: 10),
-          GestureDetector(
-            onTap: press,
-            child: Expanded(
+    return GestureDetector(
+      onTap: press,
+      child: Padding(
+        padding: const EdgeInsets.only(top: 20),
+        child: Row(
+          children: [
+            ChatImageAndOnline(
+              image: image,
+              color: onlineColor,
+            ),
+            SizedBox(width: 10),
+            Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -68,8 +68,8 @@ class ChatCard extends StatelessWidget {
                 ],
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

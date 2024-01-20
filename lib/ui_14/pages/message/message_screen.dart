@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/message/chat_card.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/message/chats_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/profile/profile_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/sing/compotations/email_field_container.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/circle_button.dart';
@@ -53,7 +54,9 @@ class MessageScreen extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 10,),
+            SizedBox(
+              height: 10,
+            ),
             ChatCard(
               image: "assets/ui_14/images/Ellipse 899.png",
               time: "09:46",
@@ -61,6 +64,16 @@ class MessageScreen extends StatelessWidget {
               personName: "Sajib  Rahman",
               text: "Hi, John! 👋 How are you doing?",
               onlineColor: Colors.amber,
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return ChatsScreen();
+                    },
+                  ),
+                );
+              },
             ),
             ChatCard(
               image: "assets/ui_14/images/Ellipse 901.png",
@@ -105,5 +118,3 @@ class MessageScreen extends StatelessWidget {
     );
   }
 }
-
-
