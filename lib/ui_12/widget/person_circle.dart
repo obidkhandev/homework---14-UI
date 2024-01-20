@@ -4,8 +4,8 @@ import 'package:modul_4_homework_obidxon/ui_3/constants.dart';
 class PersonCircle extends StatelessWidget {
   const PersonCircle({
     super.key,
+    
   });
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -24,4 +24,3 @@ class PersonCircle extends StatelessWidget {
     );
   }
 }
-

@@ -25,8 +25,8 @@ class CircleSmallButtonUi14 extends StatelessWidget {
       onTap: press,
       child: Container(
         alignment: Alignment.center,
-        height: 34,
-        width: 34,
+        height: height,
+        width: width,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color: backgroundColor,

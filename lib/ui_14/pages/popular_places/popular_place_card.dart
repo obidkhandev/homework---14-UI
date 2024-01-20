@@ -9,19 +9,21 @@ class PopularPlacesCard extends StatelessWidget {
   final String locationName;
   final int price;
   final double rating;
-  const PopularPlacesCard({
-    super.key,
-    required this.image,
-    required this.title,
-    required this.locationName,
-    required this.price,
-    required this.rating,
-  });
+  final bool isNotRichText;
+  final Color iconColor;
+  const PopularPlacesCard(
+      {super.key,
+      required this.image,
+      required this.title,
+      required this.locationName,
+      this.price = 459,
+      this.rating = 4.7,
+      this.iconColor = Colors.white,
+      this.isNotRichText = true});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 238,
       width: 160,
       padding: EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -39,7 +41,10 @@ class PopularPlacesCard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          PopularPlaceImage(image: image,),
+          PopularPlaceImage(
+            image: image,
+            iconColor: iconColor,
+          ),
           const SizedBox(height: 5),
           Text(
             title,
@@ -57,26 +62,28 @@ class PopularPlacesCard extends StatelessWidget {
             color: kSubTextColorUi14,
             iconSize: 16,
           ),
-          Row(
-            children: [
-              for (int i = 0; i < 3; i++)
-                const Icon(
-                  Icons.star,
-                  color: Colors.amber,
-                  size: 16,
+          if (isNotRichText)
+            Row(
+              children: [
+                for (int i = 0; i < 3; i++)
+                  const Icon(
+                    Icons.star,
+                    color: Colors.amber,
+                    size: 16,
+                  ),
+                SizedBox(width: 10),
+                Text(
+                  rating.toString(),
+                  style: kSfUiSytle.copyWith(
+                    fontSize: 12,
+                    color: kTextColorUi14,
+                  ),
                 ),
-              SizedBox(width: 10),
-              Text(
-                rating.toString(),
-                style: kSfUiSytle.copyWith(
-                  fontSize: 12,
-                  color: kTextColorUi14,
-                ),
-              ),
-            ],
-          ),
-          RichText(
-            text: TextSpan(
+              ],
+            ),
+          if (isNotRichText)
+            RichText(
+              text: TextSpan(
                 style: kSfUiSytle.copyWith(
                   color: kPrimaryColorUi14,
                   fontSize: 12,
@@ -86,13 +93,16 @@ class PopularPlacesCard extends StatelessWidget {
                     text: "\$$price/",
                   ),
                   const TextSpan(
-                      text: "Person",
-                      style: TextStyle(color: kSubTextColorUi14,),),
-                ],),
-          )
+                    text: "Person",
+                    style: TextStyle(
+                      color: kSubTextColorUi14,
+                    ),
+                  ),
+                ],
+              ),
+            )
         ],
       ),
     );
   }
 }
-

@@ -16,21 +16,10 @@ class PopularPlacesScreenUi14 extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
-                children: [
-                  arrowIcon(context),
-                  SizedBox(
-                    width: size.width * 0.2,
-                  ),
-                  Text(
-                    "Popular Places",
-                    style: kSfUiSytle.copyWith(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600,
-                      color: kTextColorUi14,
-                    ),
-                  ),
-                ],
+              MyAppBar(
+                size: size,
+                text: "Popular Places",
+                firsticon: arrowIcon(context),
               ),
               SizedBox(height: size.height * 0.03),
               Text(
@@ -73,6 +62,7 @@ class PopularPlacesScreenUi14 extends StatelessWidget {
                     price: 761,
                   ),
                   PopularPlacesCard(
+                    // isNotRichText: false,
                     image: "assets/ui_14/images/Rectangle 838 (3).png",
                     title: "Rangauti Resort",
                     locationName: "Sylhet, Airport Road",
@@ -85,6 +75,38 @@ class PopularPlacesScreenUi14 extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+class MyAppBar extends StatelessWidget {
+  final Widget firsticon;
+  final String text;
+  const MyAppBar(
+      {super.key,
+      required this.size,
+      required this.firsticon,
+      this.text = "Text"});
+
+  final Size size;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        firsticon,
+        SizedBox(
+          width: size.width * 0.2,
+        ),
+        Text(
+          text,
+          style: kSfUiSytle.copyWith(
+            fontSize: 18,
+            fontWeight: FontWeight.w600,
+            color: kTextColorUi14,
+          ),
+        ),
+      ],
     );
   }
 }
