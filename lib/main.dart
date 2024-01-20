@@ -6,6 +6,7 @@ import 'package:modul_4_homework_obidxon/ui_12/screens/home_screens.dart';
 import 'package:modul_4_homework_obidxon/ui_13/screens/on_boarding_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/home/home_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/sing/forgot_password.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/sing/verification.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/splash/splash_page.dart';
 import 'package:modul_4_homework_obidxon/ui_2/screens/home_page.dart';
 import 'package:modul_4_homework_obidxon/ui_3/main.dart';
@@ -55,7 +56,8 @@ class _MyHomePageState extends State<MyHomePage> {
       const OnBoardingScreenUi13(),
       // const SplashScreenUi14(),
       // HomeScreenUi14(),
-      ForgotPasswordUi14()
+      // ForgotPasswordUi14()
+      VerificationScreen(),
     ];
     return Scaffold(
       floatingActionButton: FloatingActionButton(

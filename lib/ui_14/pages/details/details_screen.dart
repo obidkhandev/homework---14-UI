@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_1/constants.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/details/background_detail.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/popular_places/popular_places_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/view/view_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/rating.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/rounded_button.dart';
@@ -75,7 +76,7 @@ class DetailScreenUi14 extends StatelessWidget {
                   const SizedBox(height: 10),
                   Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.location_on_outlined,
                         color: kSubTextColorUi14,
                       ),
@@ -84,7 +85,9 @@ class DetailScreenUi14 extends StatelessWidget {
                         style: kSfUiSytle,
                       ),
                       SizedBox(width: size.width * 0.15),
-                      RatingUi14(score: 4.7,),
+                      RatingUi14(
+                        score: 4.7,
+                      ),
                       Text(
                         "(2498)",
                         style: kSfUiSytle,
@@ -98,7 +101,7 @@ class DetailScreenUi14 extends StatelessWidget {
                       ),
                       Text(
                         "Person",
-                        style: kSfUiSytle,
+                        style: kSfUiSytle
                       ),
                     ],
                   ),
@@ -110,19 +113,27 @@ class DetailScreenUi14 extends StatelessWidget {
                       Image.asset("assets/ui_14/images/Rectangle 823.png"),
                       Image.asset("assets/ui_14/images/Rectangle 824.png"),
                       Image.asset("assets/ui_14/images/Rectangle 825.png"),
-                      Container(
-                        height: 42,
-                        width: 42,
-                        alignment: Alignment.center,
-                        decoration: const BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage(
-                                "assets/ui_14/images/Rectangle 826.png"),
+                      GestureDetector(
+                        onTap: () {
+                          Future(() {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => PopularPlacesScreenUi14()));
+      });
+                        },
+                        child: Container(
+                          height: 42,
+                          width: 42,
+                          alignment: Alignment.center,
+                          decoration: const BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage(
+                                  "assets/ui_14/images/Rectangle 826.png"),
+                            ),
                           ),
-                        ),
-                        child: Text(
-                          "+16",
-                          style: kSfUiSytle.copyWith(color: Colors.white),
+                          child: Text(
+                            "+16",
+                            style: kSfUiSytle.copyWith(color: Colors.white),
+                          ),
                         ),
                       ),
                     ],
@@ -176,4 +187,3 @@ class DetailScreenUi14 extends StatelessWidget {
     );
   }
 }
-
