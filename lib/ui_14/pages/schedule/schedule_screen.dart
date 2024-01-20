@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/popular_package/popular_package_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/schedule/widget/my_schelude.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/schedule/widget/set_date.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/arrow_icon.dart';
@@ -53,10 +54,18 @@ class ScheduleScreenUi14 extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
-              height: 10
-            ),
+            SizedBox(height: 10),
             MySchedule(
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return PopularPackageScreen();
+                    },
+                  ),
+                );
+              },
               image: "assets/ui_14/images/Rectangle 29.png",
               text: "Niladri Reservoir",
               locationName: "Tekergat, Sunamgnj",
@@ -77,4 +86,3 @@ class ScheduleScreenUi14 extends StatelessWidget {
     );
   }
 }
-

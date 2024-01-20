@@ -5,21 +5,24 @@ import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 class RatingUi14 extends StatelessWidget {
   final double score;
   final Color textColor;
-  const RatingUi14({
-    super.key,
-    required this.score,
-    this.textColor = kTextColor
-  });
+  final int starCount;
+  const RatingUi14(
+      {super.key,
+      required this.score,
+      this.textColor = kTextColor,
+      this.starCount = 1});
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Icon(
-          Icons.star,
-          color: Colors.amber,
-          size: 15,
-        ),
+        for (int i = 0; i < starCount;i++)
+          Icon(
+            Icons.star,
+            color: Colors.amber,
+            size: 15,
+          ),
+          SizedBox(width: 5),
         Text(
           "$score",
           style: kSfUiSytle.copyWith(color: textColor),

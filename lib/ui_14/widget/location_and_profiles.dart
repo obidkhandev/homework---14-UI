@@ -23,7 +23,6 @@ class LocationAndProfilesStack extends StatelessWidget {
             SizedBox(
               width: 10
             ),
-            // Spacer(),
           ],
         ),
         Positioned(
