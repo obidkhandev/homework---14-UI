@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/details/details_screen.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/view/view_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/person_circle.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/travel_card.dart';
 
@@ -139,11 +141,20 @@ class _HomeScreenUi14State extends State<HomeScreenUi14> {
                     rating: 4.7,
                     locationName: "Tekergat, Sunamgnj",
                     title: "Niladri Reservoir",
-                    press: () {},
+                    press: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return DetailScreenUi14();
+                          },
+                        ),
+                      );
+                    },
                   ),
                   const SizedBox(width: 20),
                   TravelCard(
-                    image: "assets/ui_14/images/Rectangle 34.png",
+                    image: "assets/ui_14/images/Rectangle 27.png",
                     rating: 4.8,
                     locationName: "Tekergat, Sunamgnj",
                     title: "Niladri Reservoir",

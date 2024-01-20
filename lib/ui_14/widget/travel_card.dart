@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
+import 'package:modul_4_homework_obidxon/ui_14/widget/circle_button.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/location_and_profiles.dart';
 
 class TravelCard extends StatelessWidget {
@@ -49,18 +50,10 @@ class TravelCard extends StatelessWidget {
                   image: AssetImage(image),
                 ),
               ),
-              child: Container(
-                alignment: Alignment.center,
-                height: 34,
-                width: 34,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: kTextColorUi14.withOpacity(.2),
-                ),
-                child: Icon(
-                  Icons.bookmark_border_outlined,
-                  color: Colors.white,
-                ),
+              child: CircleSmallButtonUi14(
+                icon: Icons.bookmark_border_outlined,
+                backgroundColor: kSubTextColorUi14.withOpacity(.2),
+                iconColor: Colors.white,
               ),
             ),
           ),
@@ -102,3 +95,4 @@ class TravelCard extends StatelessWidget {
     );
   }
 }
+
