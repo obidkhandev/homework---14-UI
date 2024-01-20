@@ -42,9 +42,15 @@ class PopularPlacesScreenUi14 extends StatelessWidget {
                 ),
               ),
               SizedBox(height: size.height * 0.03),
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+              const SizedBox(height: 20),
+              GridView(
+                shrinkWrap: true,
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    mainAxisExtent: 238,
+                    mainAxisSpacing: 20,
+                    crossAxisSpacing: 20),
+                children: const [
                   PopularPlacesCard(
                     image: "assets/ui_14/images/Rectangle 838.png",
                     title: "Niladri Reservoir",
@@ -59,12 +65,6 @@ class PopularPlacesScreenUi14 extends StatelessWidget {
                     rating: 4.8,
                     price: 894,
                   ),
-                ],
-              ),
-              const SizedBox(height: 20),
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
                   PopularPlacesCard(
                     image: "assets/ui_14/images/Rectangle 838 (2).png",
                     title: "Aonang Villa Resort",
