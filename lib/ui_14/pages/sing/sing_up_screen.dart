@@ -56,19 +56,16 @@ class _SingUpScreenUi14State extends State<SingUpScreenUi14> {
                     ),
                   ),
                   EmailFieldContainer(
-                    size: size,
                     child: const TextField(
                       decoration: InputDecoration(border: InputBorder.none),
                     ),
                   ),
                   EmailFieldContainer(
-                    size: size,
                     child: const TextField(
                       decoration: InputDecoration(border: InputBorder.none),
                     ),
                   ),
                   EmailFieldContainer(
-                    size: size,
                     child: TextField(
                       obscureText: _eyes,
                       obscuringCharacter: '*',

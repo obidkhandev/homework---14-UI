@@ -3,16 +3,16 @@ import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 
 class EmailFieldContainer extends StatelessWidget {
   final Widget child;
+  final Color color;
   const EmailFieldContainer({
     super.key,
-    required this.size,
     required this.child,
+    this.color = kLightGrayColor
   });
-
-  final Size size;
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Container(
       margin: const EdgeInsets.only(top: 30),
       padding: const EdgeInsets.only(left: 20),
@@ -20,7 +20,7 @@ class EmailFieldContainer extends StatelessWidget {
       height: 56,
       width: size.width * 0.9,
       decoration: BoxDecoration(
-        color: kLightGrayColor,
+        color: color,
         borderRadius: BorderRadius.circular(14),
       ),
       child: child,

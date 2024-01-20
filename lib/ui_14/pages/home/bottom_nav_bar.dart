@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/home/home_screen.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/message/message_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/profile/profile_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/schedule/schedule_screen.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
@@ -32,9 +33,7 @@ class _BottomNavBarUi14State extends State<BottomNavBarUi14> {
       Container(
         child: Center(child: Text('Next page')),
       ),
-      Container(
-        child: Center(child: Text('Next page')),
-      ),
+      MessageScreen(),
       ProfileScreenUi14()
     ];
   }

@@ -44,7 +44,6 @@ class _ForgotPasswordUi14State extends State<ForgotPasswordUi14> {
             ),
             const SizedBox(height: 20),
             EmailFieldContainer(
-              size: size,
               child: TextField(
                 onSubmitted: (value) {},
                 decoration: InputDecoration(border: InputBorder.none),

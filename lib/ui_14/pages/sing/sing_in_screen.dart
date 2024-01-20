@@ -57,13 +57,11 @@ class _SingInScreenUi14State extends State<SingInScreenUi14> {
                   ),
                   // SizedBox(height: 20),
                   EmailFieldContainer(
-                    size: size,
                     child: const TextField(
                       decoration: InputDecoration(border: InputBorder.none),
                     ),
                   ),
                   EmailFieldContainer(
-                    size: size,
                     child: TextField(
                       obscureText: _eyes,
                       obscuringCharacter: '*',

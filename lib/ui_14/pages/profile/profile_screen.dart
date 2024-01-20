@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:modul_4_homework_obidxon/ui_12/widget/person_circle.dart';
-import 'package:modul_4_homework_obidxon/ui_12/widget/simple_line.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/profile/profile_menu.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/arrow_icon.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/circle_button.dart';
+import 'package:modul_4_homework_obidxon/ui_14/widget/line_border.dart';
+import 'package:modul_4_homework_obidxon/ui_14/widget/rich_text_2.dart';
 
 class ProfileScreenUi14 extends StatelessWidget {
   const ProfileScreenUi14({super.key});
@@ -19,25 +20,15 @@ class ProfileScreenUi14 extends StatelessWidget {
               const EdgeInsets.only(left: 20, right: 20, top: 56, bottom: 20),
           child: Column(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  arrowIcon(context),
-                  Text(
-                    "Profile",
-                    style: kSfUiSytle.copyWith(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                        color: kTextColorUi14),
-                  ),
-                  CircleSmallButtonUi14(
-                    height: 44,
-                    width: 44,
-                    backgroundColor: kLightGrayColor,
-                    icon: Icons.edit,
-                    iconColor: kPrimaryColorUi14,
-                  ),
-                ],
+              MyAppBar2(
+                title: "Profile",
+                child: CircleSmallButtonUi14(
+                  height: 44,
+                  width: 44,
+                  backgroundColor: kLightGrayColor,
+                  icon: Icons.edit,
+                  iconColor: kPrimaryColorUi14,
+                ),
               ),
               SizedBox(height: 30),
               Container(
@@ -184,94 +175,28 @@ class ProfileScreenUi14 extends StatelessWidget {
   }
 }
 
-class ProfilMenu extends StatelessWidget {
-  final IconData icon;
-  final String text;
-  const ProfilMenu({
+class MyAppBar2 extends StatelessWidget {
+  final String title;
+  final Widget child;
+  const MyAppBar2({
     super.key,
-    required this.icon,
-    required this.text,
+    required this.title,
+    required this.child,
   });
 
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Icon(
-          icon,
-          color: kSubTextColorUi14,
-        ),
-        SizedBox(width: 10),
+        arrowIcon(context),
         Text(
-          text,
-          style: kSfUiSytle.copyWith(color: kTextColorUi14, fontSize: 15),
+          title,
+          style: kSfUiSytle.copyWith(
+              fontSize: 18, fontWeight: FontWeight.w600, color: kTextColorUi14),
         ),
-        Spacer(),
-        Icon(
-          Icons.arrow_forward_ios_rounded,
-          color: kSubTextColorUi14,
-          size: 18,
-        )
+        child
       ],
-    );
-  }
-}
-
-class RichText2 extends StatelessWidget {
-  final String textOne;
-  final String textTwo;
-  const RichText2({
-    super.key,
-    required this.textOne,
-    required this.textTwo,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return RichText(
-      textAlign: TextAlign.center,
-      text: TextSpan(
-        style: kSfUiSytle.copyWith(
-          color: kTextColorUi14,
-          fontSize: 16,
-        ),
-        children: [
-          TextSpan(
-            text: "$textOne\n\n",
-          ),
-          TextSpan(
-            text: textTwo,
-            style: TextStyle(
-              color: kPrimaryColorUi14,
-              fontSize: 16,
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class LineBorder extends StatelessWidget {
-  final double height;
-  final double width;
-  const LineBorder({
-    super.key,
-    this.height = 80,
-    this.width = 0,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: height,
-      width: width,
-      decoration: BoxDecoration(
-        border: Border.all(
-          color: kLightGrayColor,
-          width: 1.5,
-        ),
-      ),
     );
   }
 }
