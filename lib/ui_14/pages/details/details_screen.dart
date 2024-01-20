@@ -3,6 +3,7 @@ import 'package:modul_4_homework_obidxon/ui_1/constants.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/details/background_detail.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/view/view_screen.dart';
+import 'package:modul_4_homework_obidxon/ui_14/widget/rating.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/rounded_button.dart';
 
 class DetailScreenUi14 extends StatelessWidget {
@@ -83,15 +84,7 @@ class DetailScreenUi14 extends StatelessWidget {
                         style: kSfUiSytle,
                       ),
                       SizedBox(width: size.width * 0.15),
-                      Icon(
-                        Icons.star,
-                        color: Colors.amber,
-                        size: 15,
-                      ),
-                      Text(
-                        "4.7",
-                        style: kSfUiSytle.copyWith(color: kTextColor),
-                      ),
+                      RatingUi14(score: 4.7,),
                       Text(
                         "(2498)",
                         style: kSfUiSytle,
@@ -183,3 +176,4 @@ class DetailScreenUi14 extends StatelessWidget {
     );
   }
 }
+

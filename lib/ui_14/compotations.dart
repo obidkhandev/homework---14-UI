@@ -7,6 +7,7 @@ const kSubTextColorUi14 = Color.fromRGBO(125, 132, 141, 1);
 const kBgColorUi14 = Color.fromRGBO(202, 234, 255, 1);
 const kLightGrayColor = Color.fromRGBO(247, 247, 249, 1);
 const kLightSubTextColor = Color.fromRGBO(125, 132, 141, 0.2);
+const kViewContainerColorUi14 = Color.fromRGBO(62, 62, 62, 1);
 
 // text style
 const kOnBoardTextSytle = TextStyle(

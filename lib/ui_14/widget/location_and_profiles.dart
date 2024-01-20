@@ -4,10 +4,12 @@ import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 class LocationAndProfilesStack extends StatelessWidget {
   final String locationName;
   final Color color;
+  final Color colorIcon;
   const LocationAndProfilesStack({
     super.key,
     required this.locationName,
     required this.color,
+    this.colorIcon = kSubTextColorUi14
   });
 
   @override
@@ -16,9 +18,9 @@ class LocationAndProfilesStack extends StatelessWidget {
       children: [
         Row(
           children: [
-            const Icon(
+            Icon(
               Icons.location_on_outlined,
-              color: kSubTextColorUi14,
+              color: colorIcon,
             ),
             Text(
               locationName,
@@ -32,9 +34,12 @@ class LocationAndProfilesStack extends StatelessWidget {
             SizedBox(
               width: 10,
             ),
-            Image.asset("assets/ui_14/images/Ellipse 21.png"),
+            // Spacer(),
           ],
         ),
+        Positioned(
+          right: 45,
+          child: Image.asset("assets/ui_14/images/Ellipse 21.png")),
         Positioned(
           right: 30,
           child: Image.asset("assets/ui_14/images/Ellipse 23.png"),

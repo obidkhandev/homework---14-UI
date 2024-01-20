@@ -5,8 +5,12 @@ import 'package:modul_4_homework_obidxon/ui_14/pages/home/home_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/arrow_icon.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/rounded_button.dart';
 
+
+
+
 class VerificationScreen extends StatelessWidget {
   const VerificationScreen({super.key});
+  
 
   @override
   Widget build(BuildContext context) {

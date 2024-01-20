@@ -21,7 +21,7 @@ class _BottomNavBarUi14State extends State<BottomNavBarUi14> {
   @override
   void initState() {
     super.initState();
-    _controller = PersistentTabController(initialIndex: 0);
+    _controller = PersistentTabController(initialIndex: 1);
   }
 
   List<Widget> _buildScreens() {

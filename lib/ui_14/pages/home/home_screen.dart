@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/details/details_screen.dart';
-import 'package:modul_4_homework_obidxon/ui_14/pages/view/view_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/person_circle.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/travel_card.dart';
 
@@ -168,3 +167,4 @@ class _HomeScreenUi14State extends State<HomeScreenUi14> {
     );
   }
 }
+
