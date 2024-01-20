@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/person_circle.dart';
-
+import 'package:modul_4_homework_obidxon/ui_14/widget/travel_card.dart';
 
 class HomeScreenUi14 extends StatefulWidget {
   const HomeScreenUi14({super.key});
@@ -9,7 +9,6 @@ class HomeScreenUi14 extends StatefulWidget {
   @override
   State<HomeScreenUi14> createState() => _HomeScreenUi14State();
 }
-
 
 class _HomeScreenUi14State extends State<HomeScreenUi14> {
   @override
@@ -30,7 +29,7 @@ class _HomeScreenUi14State extends State<HomeScreenUi14> {
                   padding: const EdgeInsets.all(5),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(22),
-                    color: Color.fromRGBO(247, 247, 249, 1),
+                    color: const Color.fromRGBO(247, 247, 249, 1),
                   ),
                   child: const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -65,10 +64,8 @@ class _HomeScreenUi14State extends State<HomeScreenUi14> {
                 )
               ],
             ),
-            SizedBox(
-              height: 20,
-            ),
-            Text(
+            const SizedBox(height: 20),
+            const Text(
               'Explore the',
               style: TextStyle(
                 fontFamily: "SF UI Display",
@@ -137,9 +134,20 @@ class _HomeScreenUi14State extends State<HomeScreenUi14> {
                 padding: const EdgeInsets.only(right: 20, top: 20),
                 scrollDirection: Axis.horizontal,
                 children: [
-                  TravelCard(),
-                  SizedBox(width: 20,),
-                  TravelCard(),
+                  TravelCard(
+                    image: "assets/ui_14/images/Rectangle 27.png",
+                    rating: 4.7,
+                    locationName: "Tekergat, Sunamgnj",
+                    title: "Niladri Reservoir",
+                    press: () {},
+                  ),
+                  const SizedBox(width: 20),
+                  TravelCard(
+                    image: "assets/ui_14/images/Rectangle 34.png",
+                    rating: 4.8,
+                    locationName: "Tekergat, Sunamgnj",
+                    title: "Niladri Reservoir",
+                  ),
                 ],
               ),
             ),
@@ -149,122 +157,3 @@ class _HomeScreenUi14State extends State<HomeScreenUi14> {
     );
   }
 }
-
-class TravelCard extends StatelessWidget {
-  const TravelCard({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 384,
-      width: 268,
-      padding: const EdgeInsets.all(15),
-      decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(24),
-          boxShadow: const [
-            BoxShadow(
-                offset: Offset(0, 6),
-                blurRadius: 16,
-                color: Color.fromRGBO(180, 188, 201, 0.12))
-          ],),
-      child: Column(
-        children: [
-          Container(
-            height: 276,
-            width: 240,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              image: DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage(
-                    'assets/ui_14/images/Rectangle 27.png'),
-              ),
-            ),
-          ),
-          SizedBox(height: 14,),
-          const Row(
-            children: [
-              Text(
-                'Niladri Reservoir',
-                style: TextStyle(
-                  fontWeight: FontWeight.w500,
-                  fontFamily: "SF UI Display",
-                  fontSize: 18,
-                  color: kTextColorUi14,
-                ),
-              ),
-              Spacer(),
-              Icon(
-                Icons.star,
-                color: Colors.amber,
-                size: 20,
-              ),
-              Text(
-                "4.7",
-                style: TextStyle(
-                    fontWeight: FontWeight.w400,
-                    fontSize: 15,
-                    color: kTextColorUi14),
-              )
-            ],
-          ),
-          SizedBox(height: 8,),
-          Stack(
-            children: [
-              Row(
-                children: [
-                  const Icon(
-                    Icons.location_on_outlined,
-                    color: kSubTextColorUi14,
-                  ),
-                  const Text(
-                    "Tekergat, Sunamgnj",
-                    style: TextStyle(
-                      fontFamily: "SF UI Display",
-                      color: kSubTextColorUi14,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Image.asset(
-                      "assets/ui_14/images/Ellipse 21.png"),
-                ],
-              ),
-              Positioned(
-                right: 30,
-                child: Image.asset(
-                    "assets/ui_14/images/Ellipse 23.png"),
-              ),
-              Positioned(
-                right: 17,
-                child: Image.asset(
-                    "assets/ui_14/images/Ellipse 25.png",),
-              ),
-              Positioned(
-                right: 3,
-                child: Container(
-                  alignment: Alignment.center,
-                  height: 24,
-                  width: 24,
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: Color.fromRGBO(229, 244, 255, 1),
-                
-                  ),
-                  child: const Text("+50",style: TextStyle(fontFamily: "SF UI Display",fontSize: 11,fontWeight: FontWeight.w400,),),
-                ),
-              )
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
