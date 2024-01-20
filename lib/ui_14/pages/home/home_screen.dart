@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/details/details_screen.dart';
+import 'package:modul_4_homework_obidxon/ui_14/widget/notifications.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/person_circle.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/travel_card.dart';
 
@@ -49,20 +50,7 @@ class _HomeScreenUi14State extends State<HomeScreenUi14> {
                     ],
                   ),
                 ),
-                Container(
-                  margin: const EdgeInsets.only(right: 20),
-                  height: 44,
-                  width: 44,
-                  padding: const EdgeInsets.all(5),
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: kLightGrayColor,
-                    image: DecorationImage(
-                      image:
-                          AssetImage("assets/ui_14/images/Notifications.png"),
-                    ),
-                  ),
-                )
+                MyNotifications()
               ],
             ),
             const SizedBox(height: 20),

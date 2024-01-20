@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/home/home_screen.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/schedule/schedule_screen.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
 class BottomNavBarUi14 extends StatefulWidget {
@@ -21,15 +22,13 @@ class _BottomNavBarUi14State extends State<BottomNavBarUi14> {
   @override
   void initState() {
     super.initState();
-    _controller = PersistentTabController(initialIndex: 1);
+    _controller = PersistentTabController(initialIndex: 0);
   }
 
   List<Widget> _buildScreens() {
     return [
       HomeScreenUi14(),
-      Container(
-        child: Center(child: Text('Next page')),
-      ),
+      ScheduleScreenUi14(),
       Container(
         child: Center(child: Text('Next page')),
       ),

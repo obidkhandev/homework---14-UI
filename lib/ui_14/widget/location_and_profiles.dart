@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
+import 'package:modul_4_homework_obidxon/ui_14/widget/locationName_icon.dart';
 
 class LocationAndProfilesStack extends StatelessWidget {
   final String locationName;
@@ -18,21 +19,9 @@ class LocationAndProfilesStack extends StatelessWidget {
       children: [
         Row(
           children: [
-            Icon(
-              Icons.location_on_outlined,
-              color: colorIcon,
-            ),
-            Text(
-              locationName,
-              style: TextStyle(
-                fontFamily: "SF UI Display",
-                color: color,
-                fontSize: 15,
-                fontWeight: FontWeight.w400,
-              ),
-            ),
+            LocationNameAndIcon(colorIcon: colorIcon, locationName: locationName, color: color),
             SizedBox(
-              width: 10,
+              width: 10
             ),
             // Spacer(),
           ],
@@ -74,3 +63,4 @@ class LocationAndProfilesStack extends StatelessWidget {
     );
   }
 }
+

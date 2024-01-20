@@ -31,7 +31,7 @@ class TravelCard extends StatelessWidget {
           BoxShadow(
               offset: Offset(0, 6),
               blurRadius: 16,
-              color: Color.fromRGBO(180, 188, 201, 0.12))
+              color: Color.fromRGBO(180, 188, 201, 0.12),),
         ],
       ),
       child: Column(

@@ -21,6 +21,7 @@ class ViewScreenUi14 extends StatelessWidget {
           children: [
             Row(
               children: [
+                const SizedBox(width: 20),
                 CircleSmallButtonUi14(
                   height: 44,
                   width: 44,
