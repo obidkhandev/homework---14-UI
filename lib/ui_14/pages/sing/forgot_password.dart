@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/sing/compotations/email_field_container.dart';
-import 'package:modul_4_homework_obidxon/ui_14/pages/sing/verification.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/arrow_icon.dart';
+import 'package:modul_4_homework_obidxon/ui_14/widget/my_alert_dialog.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/rounded_button.dart';
 
 class ForgotPasswordUi14 extends StatefulWidget {
@@ -55,9 +55,12 @@ class _ForgotPasswordUi14State extends State<ForgotPasswordUi14> {
               text: "Reset Password",
               vertical: 30,
               press: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return VerificationScreen();
-                },),);
+                return showDialog<String>(
+                  context: context,
+                  builder: (context) {
+                    return MyAlertDialog();
+                  },
+                );
               },
             )
           ],

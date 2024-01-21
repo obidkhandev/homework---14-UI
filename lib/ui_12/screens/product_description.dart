@@ -31,6 +31,7 @@ class _ProductDescriptionPageState extends State<ProductDescriptionPage>
     super.dispose();
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(

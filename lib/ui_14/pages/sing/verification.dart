@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
-import 'package:modul_4_homework_obidxon/ui_14/pages/home/bottom_nav_bar.dart';
-import 'package:modul_4_homework_obidxon/ui_14/pages/home/home_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/sing/compotations/next.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/arrow_icon.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/rounded_button.dart';
@@ -66,7 +64,6 @@ class VerificationScreen extends StatelessWidget {
                       color: kLightGrayColor,
                     ),
                     child: TextField(
-                      // maxLength: 1,
                       keyboardType: TextInputType.numberWithOptions(),
                       textAlign: TextAlign.center,
                       decoration: InputDecoration(
@@ -90,9 +87,9 @@ class VerificationScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) {
+                    builder: ((context) {
                       return Next();
-                    },
+                    }),
                   ),
                 );
               },

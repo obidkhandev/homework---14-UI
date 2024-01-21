@@ -14,7 +14,8 @@ class PopularPackageCard extends StatelessWidget {
     required this.image,
     required this.title,
     required this.date,
-    required this.rating, required this.price,
+    required this.rating,
+    required this.price,
   });
 
   @override
@@ -81,7 +82,7 @@ class PopularPackageCard extends StatelessWidget {
                     color: Colors.white),
               ),
             ),
-          )
+          ),
         ],
       ),
     );

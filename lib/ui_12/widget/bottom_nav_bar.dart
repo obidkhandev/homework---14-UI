@@ -32,7 +32,7 @@ class BottomNavBar extends StatelessWidget {
             },
             child: IconButton(
               onPressed: () {},
-              icon: Icon(Icons.home_filled),
+              icon: const Icon(Icons.home_filled),
             ),
           ),
           GestureDetector(
