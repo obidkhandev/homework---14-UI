@@ -48,6 +48,8 @@ class FavoritePlaces extends StatelessWidget {
                       locationName: "Tekergat, Sunamgnj",
                       isNotRichText: false,
                       iconColor: Colors.red,
+                                            havePrice: false,
+
                     ),
                     PopularPlacesCard(
                       image: "assets/ui_14/images/Rectangle 838 (1).png",
@@ -55,6 +57,8 @@ class FavoritePlaces extends StatelessWidget {
                       locationName: "Av Damero, Mexico",
                       isNotRichText: false,
                       iconColor: Colors.red,
+                                            havePrice: false,
+
                     ),
                     PopularPlacesCard(
                       image: "assets/ui_14/images/Rectangle 838 (2).png",
@@ -62,6 +66,8 @@ class FavoritePlaces extends StatelessWidget {
                       locationName: "Bastola, Islampur",
                       isNotRichText: false,
                       iconColor: Colors.red,
+                                            havePrice: false,
+
                     ),
                     PopularPlacesCard(
                       image: "assets/ui_14/images/Rectangle 838 (3).png",
@@ -69,6 +75,8 @@ class FavoritePlaces extends StatelessWidget {
                       locationName: "Sylhet, Airport Road",
                       isNotRichText: false,
                       iconColor: Colors.red,
+                                            havePrice: false,
+
                     ),
                     PopularPlacesCard(
                       image: "assets/ui_14/images/Rectangle 838 (1).png",
@@ -76,6 +84,7 @@ class FavoritePlaces extends StatelessWidget {
                       locationName: "Vellima, Island",
                       isNotRichText: false,
                       iconColor: Colors.red,
+                      havePrice: false,
                     ),
                     PopularPlacesCard(
                       image: "assets/ui_14/images/Rectangle 839.png",
@@ -83,6 +92,7 @@ class FavoritePlaces extends StatelessWidget {
                       locationName: "Shakartu, Pakistan",
                       isNotRichText: false,
                       iconColor: Colors.red,
+                      havePrice: false,
                     ),
                   ],
                 ),

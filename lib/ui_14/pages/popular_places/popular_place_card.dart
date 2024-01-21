@@ -11,15 +11,20 @@ class PopularPlacesCard extends StatelessWidget {
   final double rating;
   final bool isNotRichText;
   final Color iconColor;
-  const PopularPlacesCard(
-      {super.key,
-      required this.image,
-      required this.title,
-      required this.locationName,
-      this.price = 459,
-      this.rating = 4.7,
-      this.iconColor = Colors.white,
-      this.isNotRichText = true});
+  final bool haveIcon;
+  final bool havePrice;
+  const PopularPlacesCard({
+    super.key,
+    required this.image,
+    required this.title,
+    required this.locationName,
+    this.price = 459,
+    this.rating = 4.7,
+    this.iconColor = Colors.white,
+    this.isNotRichText = true,
+    this.haveIcon = true,
+    this.havePrice = true,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -44,6 +49,7 @@ class PopularPlacesCard extends StatelessWidget {
           PopularPlaceImage(
             image: image,
             iconColor: iconColor,
+            haveIcon: haveIcon,
           ),
           const SizedBox(height: 5),
           Text(
@@ -81,7 +87,7 @@ class PopularPlacesCard extends StatelessWidget {
                 ),
               ],
             ),
-          if (isNotRichText)
+          if (havePrice)
             RichText(
               text: TextSpan(
                 style: kSfUiSytle.copyWith(
