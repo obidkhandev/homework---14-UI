@@ -7,6 +7,9 @@ import 'package:modul_4_homework_obidxon/ui_13/screens/on_boarding_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/material.dart';
 import 'package:modul_4_homework_obidxon/ui_2/screens/home_page.dart';
 import 'package:modul_4_homework_obidxon/ui_3/main.dart';
+import 'package:modul_4_homework_obidxon/ui_4/lib/main.dart';
+import 'package:modul_4_homework_obidxon/ui_5/lib/main.dart';
+import 'package:modul_4_homework_obidxon/ui_6/lib/main.dart';
 import 'package:modul_4_homework_obidxon/ui_7/main.dart';
 import 'package:modul_4_homework_obidxon/ui_8/screen/welcome/welcome_page.dart';
 import 'package:modul_4_homework_obidxon/ui_9/screen/my_app.dart';
@@ -34,8 +37,7 @@ class MyHomePage extends StatefulWidget {
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
-
-int screenIndex = 10;
+int screenIndex = 4;
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
@@ -45,6 +47,9 @@ class _MyHomePageState extends State<MyHomePage> {
       const DetailPageUi1(),
       const HomePageUi_2(),
       const MyAppUi_3(),
+      const MyAppUi4(),
+      const MyAppUi5(),
+      const MyAppUi6(),
       const MyAppUi7(),
       const WelcomeScreenUi8(),
       const MyAppUi9(),
@@ -54,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // const SplashScreenUi14(),
       // HomeScreenUi14(),
       // ForgotPasswordUi14()
-      const MyAppUi14()
+      const MyAppUi14(),
     ];
     return Scaffold(
       floatingActionButton: FloatingActionButton(
