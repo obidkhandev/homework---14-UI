@@ -44,7 +44,7 @@ class WelcomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return SingInPage();
+                          return const SingInPage();
                         },
                       ),
                     );

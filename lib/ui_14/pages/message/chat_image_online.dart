@@ -28,7 +28,7 @@ class ChatImageAndOnline extends StatelessWidget {
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color: color,
-          boxShadow: [
+          boxShadow: const [
             BoxShadow(
               offset: Offset(0, 4),
               blurRadius: 8,

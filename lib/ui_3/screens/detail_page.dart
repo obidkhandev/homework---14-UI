@@ -35,8 +35,8 @@ class DetailPage extends StatelessWidget {
               ],
             ),
             Container(
-              margin: EdgeInsets.symmetric(vertical: 15),
-              padding: EdgeInsets.all(6),
+              margin: const EdgeInsets.symmetric(vertical: 15),
+              padding: const EdgeInsets.all(6),
               height: 300,
               width: 300,
               decoration: const BoxDecoration(
@@ -123,7 +123,7 @@ class DetailPage extends StatelessWidget {
                       alignment: Alignment.center,
                       children: [
                         Container(
-                          padding: EdgeInsets.all(12),
+                          padding: const EdgeInsets.all(12),
                           height: 55,
                           width: 55,
                           decoration: const BoxDecoration(

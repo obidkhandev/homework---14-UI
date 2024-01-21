@@ -25,32 +25,32 @@ class SecondOnBoardScreenUi14 extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return SingInScreenUi14();
+                    return const SingInScreenUi14();
                   },
                 ),
               );
             },
           ),
-          SizedBox(
-            height: 30,
+          const SizedBox(
+            height: 30
           ),
-          Text(
+          const Text(
             'It’s a big world out',
             style: kOnBoardTextSytle,
             textAlign: TextAlign.center,
           ),
-          OnBoardBigTitlUi14(
+          const OnBoardBigTitlUi14(
             image: 'assets/ui_14/images/Vector 2524 (1).png',
             actionText: 'explore',
             blackText: 'there go',
           ),
-          OnBoardSmallText(
+          const OnBoardSmallText(
               text:
                   'To get the best of your adventure you just need to leave and go where you like. we are waiting for you'),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
-          MyTabScroll(
+          const MyTabScroll(
             color1: kBgColorUi14,
             color2: kPrimaryColorUi14,
             color3: kBgColorUi14,
@@ -58,7 +58,7 @@ class SecondOnBoardScreenUi14 extends StatelessWidget {
             width2: 35,
             width3: 6,
           ),
-          Spacer(),
+          const Spacer(),
           RoundedButtonUi14(
             size: size,
             text: 'Next',
@@ -68,7 +68,7 @@ class SecondOnBoardScreenUi14 extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return ThirdOnBoardScreenUi14();
+                    return const ThirdOnBoardScreenUi14();
                   },
                 ),
               );

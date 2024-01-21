@@ -9,11 +9,12 @@ class CategoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GridView(
-      padding: EdgeInsets.only(left: 12,right: 12),
+      padding: const EdgeInsets.only(left: 12,right: 12),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        mainAxisExtent: 224,
           crossAxisCount: 2, mainAxisSpacing: 20, crossAxisSpacing: 20),
       shrinkWrap: true,
-      physics: BouncingScrollPhysics(),
+      physics: const BouncingScrollPhysics(),
       // physics: AlwaysScrollableScrollPhysics(),
       children: const [
         CategoryBagCard(

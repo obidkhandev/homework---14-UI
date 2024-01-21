@@ -16,6 +16,7 @@ class CategoryBagCard extends StatelessWidget {
     return Container(
       height: 254,
       width: 170,
+      alignment: Alignment.bottomRight,
       decoration: BoxDecoration(
         color: Colors.white,
         image: DecorationImage(
@@ -26,7 +27,9 @@ class CategoryBagCard extends StatelessWidget {
         ),
       ),
       child: Container(
-        margin: EdgeInsets.only(right: 0,bottom: 0,left: 50,top: 140),
+        height: 38,
+        width: 140,
+        // margin: EdgeInsets.only(right: 0,bottom: 0,left: 50,top: 140),
         alignment: Alignment.center,
         color: kBackColor,
         child: Text(

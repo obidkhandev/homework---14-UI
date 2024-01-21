@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 class LocationNameAndIcon extends StatelessWidget {
@@ -27,7 +29,7 @@ class LocationNameAndIcon extends StatelessWidget {
           color: colorIcon,
           size: iconSize,
         ),
-        SizedBox(width: 5),
+        const SizedBox(width: 5),
         Text(
           locationName,
           style: TextStyle(

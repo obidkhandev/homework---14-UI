@@ -23,12 +23,12 @@ class PopularPackageCard extends StatelessWidget {
     return Container(
       height: 140,
       width: double.infinity,
-      margin: EdgeInsets.symmetric(vertical: 15),
-      padding: EdgeInsets.all(15),
+      margin: const EdgeInsets.symmetric(vertical: 15),
+      padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             offset: Offset(0, 6),
             blurRadius: 20,
@@ -39,7 +39,7 @@ class PopularPackageCard extends StatelessWidget {
       child: Row(
         children: [
           Image.asset(image),
-          SizedBox(width: 10),
+          const SizedBox(width: 10),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -63,7 +63,7 @@ class PopularPackageCard extends StatelessWidget {
               ),
             ],
           ),
-          Spacer(),
+          const Spacer(),
           Align(
             alignment: Alignment.topRight,
             child: Container(

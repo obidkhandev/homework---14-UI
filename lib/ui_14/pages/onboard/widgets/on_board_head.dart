@@ -20,7 +20,7 @@ class OnBoardHeader extends StatelessWidget {
       height: size.height * 0.53,
       width: double.infinity,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           bottomRight: Radius.circular(30),
           bottomLeft: Radius.circular(30),
         ),
@@ -31,7 +31,7 @@ class OnBoardHeader extends StatelessWidget {
       ),
       child: GestureDetector(
         onTap: skipPress,
-        child: Text(
+        child: const Text(
           'Skip',
           style: TextStyle(
             color: Color.fromRGBO(202, 234, 255, 1),

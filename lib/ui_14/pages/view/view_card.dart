@@ -25,7 +25,7 @@ class ViewCard extends StatelessWidget {
         top: top,
         left: left,
       ),
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       // height: 78,
       width: width,
       decoration: BoxDecoration(
@@ -35,7 +35,7 @@ class ViewCard extends StatelessWidget {
       child: Row(
         children: [
           Image.asset(image),
-          SizedBox(width: 10),
+          const SizedBox(width: 10),
           RichText(
             text: TextSpan(
                 style: kSfUiSytle.copyWith(

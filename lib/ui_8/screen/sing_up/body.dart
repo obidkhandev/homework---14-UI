@@ -23,7 +23,7 @@ class SingUpBodyUi8 extends StatelessWidget {
           children: [
             Text(
               'SingUp'.toUpperCase(),
-              style: TextStyle(fontWeight: FontWeight.bold),
+              style: const TextStyle(fontWeight: FontWeight.bold),
             ),
             SizedBox(
               height: size.height * 0.03,
@@ -53,15 +53,15 @@ class SingUpBodyUi8 extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return LoginScreenUi8();
+                      return const LoginScreenUi8();
                     },
                   ),
                 );
               },
               login: false,
             ),
-            OrDividerUi8(),
-            Row(
+            const OrDividerUi8(),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 LocalIcon(

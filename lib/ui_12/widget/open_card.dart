@@ -17,7 +17,7 @@ class _OpenCardState extends State<OpenCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: 10, left: 22, bottom: 30),
+      padding: const EdgeInsets.only(top: 10, left: 22, bottom: 30),
       height: 512,
       width: 345,
       decoration: const BoxDecoration(
@@ -160,7 +160,7 @@ class BuyOpenCart extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           width: 10,
         ),
         Column(
@@ -170,7 +170,7 @@ class BuyOpenCart extends StatelessWidget {
               productName,
               style: kPlayfairDisplay.copyWith(fontSize: 17),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             RichText(
@@ -186,7 +186,7 @@ class BuyOpenCart extends StatelessWidget {
                   TextSpan(
                     text: '$productStyle\n',
                     style: kWorkSansBlack.copyWith(
-                      color: Color.fromRGBO(132, 132, 132, 1),
+                      color: const Color.fromRGBO(132, 132, 132, 1),
                       fontSize: 14,
                       fontWeight: FontWeight.w400,
                     ),
@@ -194,7 +194,7 @@ class BuyOpenCart extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Text(

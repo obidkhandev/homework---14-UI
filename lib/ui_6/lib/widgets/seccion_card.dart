@@ -24,7 +24,7 @@ class SeccionCard extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(13),
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(
                   offset: Offset(0, 10),
                   blurRadius: 23,
@@ -56,7 +56,7 @@ class SeccionCard extends StatelessWidget {
                           color: isDone ? Colors.white : kBlueColorUi6,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Text(

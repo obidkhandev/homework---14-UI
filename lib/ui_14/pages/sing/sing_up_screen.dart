@@ -36,7 +36,7 @@ class _SingUpScreenUi14State extends State<SingUpScreenUi14> {
               child: Column(
                 children: [
                   arrowIcon(context),
-                  SizedBox(height: 20,),
+                  const SizedBox(height: 20,),
                   const Text(
                     "Sign up now",
                     style: TextStyle(
@@ -45,8 +45,8 @@ class _SingUpScreenUi14State extends State<SingUpScreenUi14> {
                       fontWeight: FontWeight.w400,
                     ),
                   ),
-                  SizedBox(height: 5),
-                  Text(
+                  const SizedBox(height: 5),
+                  const Text(
                     'Please fill the details and create account',
                     style: TextStyle(
                       fontFamily: 'SF UI Display',
@@ -55,13 +55,13 @@ class _SingUpScreenUi14State extends State<SingUpScreenUi14> {
                       fontWeight: FontWeight.w400,
                     ),
                   ),
-                  EmailFieldContainer(
-                    child: const TextField(
+                  const EmailFieldContainer(
+                    child: TextField(
                       decoration: InputDecoration(border: InputBorder.none),
                     ),
                   ),
-                  EmailFieldContainer(
-                    child: const TextField(
+                  const EmailFieldContainer(
+                    child:  TextField(
                       decoration: InputDecoration(border: InputBorder.none),
                     ),
                   ),
@@ -107,7 +107,7 @@ class _SingUpScreenUi14State extends State<SingUpScreenUi14> {
                         context,
                         MaterialPageRoute(
                           builder: (context) {
-                            return ForgotPasswordUi14();
+                            return const ForgotPasswordUi14();
                           },
                         ),
                       );

@@ -22,8 +22,8 @@ class MySchedule extends StatelessWidget {
       child: Container(
         // height: 100,
         width: double.infinity,
-        padding: EdgeInsets.all(14),
-        margin: EdgeInsets.symmetric(vertical: 10),
+        padding: const EdgeInsets.all(14),
+        margin: const EdgeInsets.symmetric(vertical: 10),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(16),
@@ -38,12 +38,12 @@ class MySchedule extends StatelessWidget {
         child: Row(
           children: [
             Image.asset(image),
-            SizedBox(width: 20),
+            const SizedBox(width: 20),
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                DateAndCalendar(),
+                const DateAndCalendar(),
                 Text(
                   text,
                   style: kSfUiSytle.copyWith(
@@ -59,8 +59,8 @@ class MySchedule extends StatelessWidget {
                 ),
               ],
             ),
-            Spacer(),
-            Icon(
+            const Spacer(),
+            const Icon(
               Icons.arrow_forward_ios_rounded,
               color: kSubTextColorUi14,
             )

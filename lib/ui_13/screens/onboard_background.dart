@@ -13,7 +13,7 @@ class OnBoardBackroundUi13 extends StatelessWidget {
         padding: EdgeInsets.only(top: size.height * 0.3),
         height: size.height,
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: konBoardingBackColorUI13,
           ),

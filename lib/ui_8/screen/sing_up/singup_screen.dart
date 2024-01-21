@@ -6,7 +6,7 @@ class SingUpUi8 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SingUpBodyUi8(
         child: Column(),
       ),

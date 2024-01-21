@@ -57,12 +57,12 @@ class _HomeScreenUi14State extends State<HomeScreenUi14> {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return NotificationScreen();
+                          return const NotificationScreen();
                         },
                       ),
                     );
                   },
-                  child: MyNotifications())
+                  child: const MyNotifications())
             ],
           ),
           const SizedBox(height: 20),
@@ -115,7 +115,7 @@ class _HomeScreenUi14State extends State<HomeScreenUi14> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(right: 20),
+                padding: EdgeInsets.only(right: 20),
                 child: Text(
                   'View all',
                   style: TextStyle(
@@ -145,14 +145,14 @@ class _HomeScreenUi14State extends State<HomeScreenUi14> {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return DetailScreenUi14();
+                          return const DetailScreenUi14();
                         },
                       ),
                     );
                   },
                 ),
                 const SizedBox(width: 20),
-                TravelCard(
+                const TravelCard(
                   image: "assets/ui_14/images/Rectangle 27.png",
                   rating: 4.8,
                   locationName: "Tekergat, Sunamgnj",

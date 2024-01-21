@@ -24,8 +24,8 @@ class MyCart extends StatelessWidget {
           width: 81,
           height: 81,
         ),
-        SizedBox(
-          width: 10,
+        const SizedBox(
+          width: 10
         ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -34,7 +34,7 @@ class MyCart extends StatelessWidget {
               productName,
               style: kPlayfairDisplay.copyWith(fontSize: 17),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             RichText(
@@ -50,7 +50,7 @@ class MyCart extends StatelessWidget {
                   TextSpan(
                     text: '$productStyle\n',
                     style: kWorkSansBlack.copyWith(
-                      color: Color.fromRGBO(132, 132, 132, 1),
+                      color: const Color.fromRGBO(132, 132, 132, 1),
                       fontSize: 14,
                       fontWeight: FontWeight.w400,
                     ),
@@ -58,7 +58,7 @@ class MyCart extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Text(
@@ -69,7 +69,7 @@ class MyCart extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(top: 5),
+              margin: const EdgeInsets.only(top: 5),
               height: 2,
               width: 59,
               color: kBackColor,

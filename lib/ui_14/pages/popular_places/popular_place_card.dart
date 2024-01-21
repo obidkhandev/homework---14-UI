@@ -30,7 +30,7 @@ class PopularPlacesCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 160,
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
@@ -77,7 +77,7 @@ class PopularPlacesCard extends StatelessWidget {
                     color: Colors.amber,
                     size: 16,
                   ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Text(
                   rating.toString(),
                   style: kSfUiSytle.copyWith(

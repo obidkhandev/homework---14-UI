@@ -15,7 +15,7 @@ class MyAppUi7 extends StatelessWidget {
         textTheme:
             Theme.of(context).textTheme.apply(displayColor: kTextColorUi7),
       ),
-      home: HomeScreenUi7(),
+      home: const HomeScreenUi7(),
     );
   }
 }

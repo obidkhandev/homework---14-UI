@@ -16,9 +16,9 @@ class BodyUi9 extends StatelessWidget {
           SearchBoxUi9(
             onChanged: (value) {},
           ),
-          CategoryListUi9(),
-          ItemListUi9(),
-          DiscountCard(),
+          const CategoryListUi9(),
+          const ItemListUi9(),
+          const DiscountCard(),
         ],
       ),
     );

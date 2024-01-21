@@ -19,7 +19,7 @@ class BodyUi8 extends StatelessWidget {
         children: [
           Text(
             'Welcome to Edu'.toUpperCase(),
-            style: TextStyle(fontWeight: FontWeight.bold),
+            style: const TextStyle(fontWeight: FontWeight.bold),
           ),
           SizedBox(
             height: size.height * 0.03,

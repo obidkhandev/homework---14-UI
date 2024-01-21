@@ -13,7 +13,7 @@ class ProfileEditScreen extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.only(
+          padding: const EdgeInsets.only(
             left: 20,
             right: 20,
             top: 56,
@@ -22,16 +22,16 @@ class ProfileEditScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               MyAppBar2(
+                title: "Edit Profile",
                 child: Text(
                   "Done",
                   style: kSfUiSytle.copyWith(
                     color: kPrimaryColorUi14,
                   ),
                 ),
-                title: "Edit Profile",
               ),
-              SizedBox(height: 20),
-              Align(
+              const SizedBox(height: 20),
+              const Align(
                 alignment: Alignment.center,
                 child: ProfileCircleImage(),
               ),
@@ -53,22 +53,22 @@ class ProfileEditScreen extends StatelessWidget {
                       color: kPrimaryColorUi14, fontWeight: FontWeight.w600),
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Text(
                 "First Name",
                 style: kSfUiSytle.copyWith(color: kTextColorUi14, fontSize: 18),
               ),
-              ProfileSettingsInput(),
+              const ProfileSettingsInput(),
               Text(
                 "Last Name",
                 style: kSfUiSytle.copyWith(color: kTextColorUi14, fontSize: 18),
               ),
-              ProfileSettingsInput(),
+              const ProfileSettingsInput(),
               Text(
                 "Location",
                 style: kSfUiSytle.copyWith(color: kTextColorUi14, fontSize: 18),
               ),
-              EmailFieldContainer(
+              const EmailFieldContainer(
                 topSize: 10,
                 bottom: 10,
                 child: TextField(
@@ -90,11 +90,11 @@ class ProfileEditScreen extends StatelessWidget {
                 bottom: 10,
                 child: Row(
                   children: [
-                    Text("+88",style: kSfUiSytle,),
-                    SizedBox(width: 5),
+                    const Text("+88",style: kSfUiSytle,),
+                    const SizedBox(width: 5),
                     Image.asset("assets/ui_14/images/^.png"),
-                    SizedBox(width: 10),
-                    Expanded(
+                    const SizedBox(width: 10),
+                    const Expanded(
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,

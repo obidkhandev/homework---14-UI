@@ -12,7 +12,7 @@ class DetailsPageUi6 extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
-      bottomNavigationBar: BottomNavBarUi6(),
+      bottomNavigationBar: const BottomNavBarUi6(),
       body: Stack(
         children: [
           Container(
@@ -41,27 +41,27 @@ class DetailsPageUi6 extends StatelessWidget {
                         .displaySmall!
                         .copyWith(fontSize: 32, fontWeight: FontWeight.w900),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
-                  Text(
+                  const Text(
                     '3-10 MIN Course',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
                   SizedBox(
                     width: size.width * .6,
-                    child: Text(
+                    child: const Text(
                       'Live happier and healthier by lerning the fundementals of meditation',
                     ),
                   ),
                   SizedBox(
                     width: size.width * .5,
-                    child: SerachBar(),
+                    child: const SerachBar(),
                   ),
                   Wrap(
                     spacing: 20,
@@ -94,7 +94,7 @@ class DetailsPageUi6 extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Text(
@@ -105,13 +105,13 @@ class DetailsPageUi6 extends StatelessWidget {
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 20),
-                    padding: EdgeInsets.all(15),
+                    margin: const EdgeInsets.symmetric(vertical: 20),
+                    padding: const EdgeInsets.all(15),
                     height: 90,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(13),
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           offset: Offset(0, 15),
                           spreadRadius: -13,
@@ -124,7 +124,7 @@ class DetailsPageUi6 extends StatelessWidget {
                       children: [
                         SvgPicture.asset(
                             'assets/ui_6/icons/Meditation_women_small.svg'),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Expanded(
@@ -136,11 +136,11 @@ class DetailsPageUi6 extends StatelessWidget {
                                 'Basic 2',
                                 style: Theme.of(context).textTheme.titleSmall,
                               ),
-                              Text('Start your deepen you practice'),
+                              const Text('Start your deepen you practice'),
                             ],
                           ),
                         ),
-                        Padding(padding: EdgeInsets.all(10),child: SvgPicture.asset('assets/ui_6/icons/Lock.svg'),),
+                        Padding(padding: const EdgeInsets.all(10),child: SvgPicture.asset('assets/ui_6/icons/Lock.svg'),),
                       ],
                     ),
                   ),

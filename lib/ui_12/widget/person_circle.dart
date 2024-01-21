@@ -11,10 +11,10 @@ class PersonCircle extends StatelessWidget {
     return Container(
       height: 32,
       width: 32,
-      margin: EdgeInsets.only(
+      margin: const EdgeInsets.only(
         right: 12,
       ),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: kBackColor,
         shape: BoxShape.circle,
         image: DecorationImage(

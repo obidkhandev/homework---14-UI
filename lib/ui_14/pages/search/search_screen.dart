@@ -15,7 +15,7 @@ class SearchScreenUi14 extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.only(
+          padding: const EdgeInsets.only(
             left: 20,
             top: 56,
             right: 20,
@@ -33,7 +33,7 @@ class SearchScreenUi14 extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               const EmailFieldContainer(
                 child: TextField(
                   decoration: InputDecoration(
@@ -54,7 +54,7 @@ class SearchScreenUi14 extends StatelessWidget {
                       )),
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Text(
                 "Search Places",
                 style: kSfUiSytle.copyWith(
@@ -63,7 +63,7 @@ class SearchScreenUi14 extends StatelessWidget {
                   fontWeight: FontWeight.w600,
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               SizedBox(
                 height: size.height,
                 width: double.infinity,

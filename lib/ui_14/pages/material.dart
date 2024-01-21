@@ -11,7 +11,7 @@ class MyAppUi14 extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: SplashScreenUi14(),
+      home: const SplashScreenUi14(),
     );
   }
 }

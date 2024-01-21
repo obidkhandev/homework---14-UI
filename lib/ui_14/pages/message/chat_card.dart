@@ -37,7 +37,7 @@ class ChatCard extends StatelessWidget {
               image: image,
               color: onlineColor,
             ),
-            SizedBox(width: 10),
+            const SizedBox(width: 10),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,7 +51,7 @@ class ChatCard extends StatelessWidget {
                           fontSize: 18,
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Icon(isRead ? Icons.done_all_rounded : Icons.check,
                           color: iconColor),
                       Text(
@@ -60,7 +60,7 @@ class ChatCard extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 5),
+                  const SizedBox(height: 5),
                   Text(
                     text,
                     style: kSfUiSytle.copyWith(overflow: TextOverflow.ellipsis),

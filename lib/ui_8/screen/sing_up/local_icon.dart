@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:modul_4_homework_obidxon/ui_8/constants.dart';
@@ -17,7 +19,7 @@ class LocalIcon extends StatelessWidget {
       onTap: press,
       child: Container(
         padding: const EdgeInsets.all(20),
-        margin: EdgeInsets.symmetric(horizontal: 10),
+        margin: const EdgeInsets.symmetric(horizontal: 10),
         decoration: BoxDecoration(
           border: Border.all(
             width: 2,

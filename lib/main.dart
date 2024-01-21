@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_1/screens/detail_page.dart';
 import 'package:modul_4_homework_obidxon/ui_1/screens/home_page.dart';
 import 'package:modul_4_homework_obidxon/ui_10/screen/home_screen.dart';
+import 'package:modul_4_homework_obidxon/ui_11/lib/main.dart';
+import 'package:modul_4_homework_obidxon/ui_12/screens/home_card_open.dart';
 import 'package:modul_4_homework_obidxon/ui_12/screens/home_screens.dart';
+import 'package:modul_4_homework_obidxon/ui_12/screens/home_wishlist.dart';
 import 'package:modul_4_homework_obidxon/ui_13/screens/on_boarding_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/material.dart';
 import 'package:modul_4_homework_obidxon/ui_2/screens/home_page.dart';
@@ -37,7 +40,7 @@ class MyHomePage extends StatefulWidget {
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
-int screenIndex = 4;
+int screenIndex = 0;
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
@@ -54,11 +57,11 @@ class _MyHomePageState extends State<MyHomePage> {
       const WelcomeScreenUi8(),
       const MyAppUi9(),
       const HomeScreenUi10(),
+      const MyAppUi11(),
       const HomePageUi12(),
+      const HomeWishlist(),
+      const HomeCardOpenScreenUi12(),
       const OnBoardingScreenUi13(),
-      // const SplashScreenUi14(),
-      // HomeScreenUi14(),
-      // ForgotPasswordUi14()
       const MyAppUi14(),
     ];
     return Scaffold(

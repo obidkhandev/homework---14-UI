@@ -41,16 +41,16 @@ class ViewScreenUi14 extends StatelessWidget {
                 )
               ],
             ),
-            ViewCard(
+            const ViewCard(
               top: 124,
               left: 187,
               image: "assets/ui_14/images/Rectangle 833.png",
               viewName: "La-Hotel",
               mil: 2.09,
             ),
-            SimleLineUi14(),
-            CircleUi14(),
-            ViewCard(
+            const SimleLineUi14(),
+            const CircleUi14(),
+            const ViewCard(
               left: 20,
               top: 73,
               image: "assets/ui_14/images/Rectangle 833 (1).png",
@@ -58,11 +58,11 @@ class ViewScreenUi14 extends StatelessWidget {
               mil: 2.09,
               width: 209,
             ),
-            SimleLineUi14(
+            const SimleLineUi14(
               left: 33,
             ),
-            CircleUi14(left: 22),
-            SizedBox(
+            const CircleUi14(left: 22),
+            const SizedBox(
               height: 20,
             ),
             TravelCardListView(size: size)

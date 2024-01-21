@@ -38,9 +38,9 @@ class CategoryCardUi6 extends StatelessWidget {
               padding: const EdgeInsets.all(15),
               child: Column(
                 children: [
-                  Spacer(),
+                  const Spacer(),
                   SvgPicture.asset(image),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     textAlign: TextAlign.center,
                     text,

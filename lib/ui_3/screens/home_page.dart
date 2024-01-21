@@ -5,6 +5,7 @@ import 'package:modul_4_homework_obidxon/ui_3/screens/detail_page.dart';
 import 'package:modul_4_homework_obidxon/ui_3/widgets/category_title.dart';
 import 'package:modul_4_homework_obidxon/ui_3/widgets/food_card.dart';
 
+// ignore: camel_case_types
 class HomePageUi_3 extends StatelessWidget {
   const HomePageUi_3({super.key});
 

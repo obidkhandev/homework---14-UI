@@ -7,10 +7,10 @@ class BuyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: 10, left: 22, bottom: 30),
+      padding: const EdgeInsets.only(top: 10, left: 22, bottom: 30),
       height: 450,
       width: 345,
-      decoration: BoxDecoration(
+      decoration:const  BoxDecoration(
         color: Color.fromRGBO(255, 255, 255, 0.9),
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(40),

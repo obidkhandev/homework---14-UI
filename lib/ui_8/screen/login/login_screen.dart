@@ -7,7 +7,7 @@ class LoginScreenUi8 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Size size = MediaQuery.of(context).size;
-    return Scaffold(
+    return const Scaffold(
       body: SingleChildScrollView(child: LoginBodyUi8()),
     );
   }

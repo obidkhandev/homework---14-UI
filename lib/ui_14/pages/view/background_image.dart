@@ -14,10 +14,10 @@ class BackgroundImageViewScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
-        padding: EdgeInsets.only(top: 56,left: 0,right: 0,bottom: 30),
+        padding: const EdgeInsets.only(top: 56,left: 0,right: 0,bottom: 30),
         // height: size.height,
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             image: DecorationImage(
           fit: BoxFit.cover,
           image:

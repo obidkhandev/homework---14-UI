@@ -9,58 +9,14 @@ class RecommendedScreenUi13 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: Container(
-        height: 70,
-        width: double.infinity,
-        decoration: const BoxDecoration(color: Colors.white, boxShadow: [
-          BoxShadow(
-            offset: Offset(2, 0),
-            blurRadius: 4,
-            color: Color.fromRGBO(0, 0, 0, 0.12)
-          ),
-        ]),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.home,
-                color: kPrimaryColorUi13,
-              ),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.search,
-                color: Color.fromRGBO(64, 64, 64, 1),
-                // size: 24,
-              ),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.play_circle,
-                color: Color.fromRGBO(64, 64, 64, 1),
-              ),
-            ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.person,
-                color: Color.fromRGBO(64, 64, 64, 1),
-              ),
-            ),
-          ],
-        ),
-      ),
+      bottomNavigationBar: const BottomNavBarUi13(),
       body: Padding(
         padding: const EdgeInsets.only(
           top: 60,
           left: 20,
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: ListView(
+          // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const MyRichText(
               firstText: 'Recommended ',
@@ -195,6 +151,61 @@ class RecommendedScreenUi13 extends StatelessWidget {
           const Text('\$24',style: TextStyle(color: Colors.black,fontWeight: FontWeight.w600),),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class BottomNavBarUi13 extends StatelessWidget {
+  const BottomNavBarUi13({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 70,
+      width: double.infinity,
+      decoration: const BoxDecoration(color: Colors.white, boxShadow: [
+        BoxShadow(
+          offset: Offset(2, 0),
+          blurRadius: 4,
+          color: Color.fromRGBO(0, 0, 0, 0.12)
+        ),
+      ]),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.home,
+              color: kPrimaryColorUi13,
+            ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.search,
+              color: Color.fromRGBO(64, 64, 64, 1),
+              // size: 24,
+            ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.play_circle,
+              color: Color.fromRGBO(64, 64, 64, 1),
+            ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.person,
+              color: Color.fromRGBO(64, 64, 64, 1),
+            ),
+          ),
+        ],
       ),
     );
   }

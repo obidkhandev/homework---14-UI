@@ -25,7 +25,7 @@ class RichText2 extends StatelessWidget {
           ),
           TextSpan(
             text: textTwo,
-            style: TextStyle(
+            style: const TextStyle(
               color: kPrimaryColorUi14,
               fontSize: 16,
             ),

@@ -9,7 +9,7 @@ class ProfileSettingsInput extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return EmailFieldContainer(
+    return const EmailFieldContainer(
       topSize: 10,
       bottom: 10,
       child: TextField(

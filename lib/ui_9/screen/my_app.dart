@@ -13,13 +13,13 @@ class MyAppUi9 extends StatelessWidget {
       theme: ThemeData(
         primaryColor: kPrimaryColorUi9,
         scaffoldBackgroundColor: Colors.white,
-        appBarTheme: AppBarTheme(color: kPrimaryColorUi9),
-        textTheme: TextTheme(
+        appBarTheme: const AppBarTheme(color: kPrimaryColorUi9),
+        textTheme: const TextTheme(
           bodyLarge: TextStyle(color: kSecondaryColorUi9),
           bodyMedium: TextStyle(color: kSecondaryColorUi9),
         )
       ),
-      home: HomePageUi9(),
+      home: const HomePageUi9(),
     );
   }
 }

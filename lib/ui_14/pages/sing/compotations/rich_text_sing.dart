@@ -29,7 +29,7 @@ class MyRichTextSingPage extends StatelessWidget {
           onPressed: press,
           child: Text(
             isHaveAccount? "Sing Up" : "Sing In",
-            style: TextStyle(
+            style: const TextStyle(
               fontFamily: "SF UI Display",
               fontWeight: FontWeight.w500,
               fontSize: 14,

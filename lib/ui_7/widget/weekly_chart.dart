@@ -68,14 +68,14 @@ SideTitleWidget bottomTitleWidgets(double value, TitleMeta meta) {
     _ => '',
   };
   return SideTitleWidget(
+    axisSide: meta.axisSide,
     child: Text(
       week,
-      style: TextStyle(
+      style: const TextStyle(
         fontSize: 10,
         fontWeight: FontWeight.w200,
         color: Color(0xFF7589A2),
       ),
     ),
-    axisSide: meta.axisSide,
   );
 }

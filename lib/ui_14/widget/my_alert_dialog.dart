@@ -10,21 +10,21 @@ class MyAlertDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-      title: Text("Check your email"),
+      title: const Text("Check your email"),
       backgroundColor: Colors.white,
       icon: Container(
         height: 44,
         width: 44,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: kPrimaryColorUi14,
           shape: BoxShape.circle,
         ),
-        child: Icon(
+        child: const Icon(
           Icons.check,
           color: Colors.white,
         ),
       ),
-      content: Text(
+      content: const Text(
         "We have send password recovery instruction to your email",
         style: kSfUiSytle,
         textAlign: TextAlign.center,
@@ -39,7 +39,7 @@ class MyAlertDialog extends StatelessWidget {
             context,
             MaterialPageRoute(
               builder: (context) {
-                return VerificationScreen();
+                return const VerificationScreen();
               },
             ),
           ),

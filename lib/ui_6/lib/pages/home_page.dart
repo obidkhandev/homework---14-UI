@@ -12,12 +12,12 @@ class HomePageUi6 extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
-      bottomNavigationBar: BottomNavBarUi6(),
+      bottomNavigationBar: const BottomNavBarUi6(),
       body: Stack(
         children: [
           Container(
             height: size.height * .45,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Color(0xFFF5CEBB),
               image: DecorationImage(
                 alignment: Alignment.centerLeft,
@@ -34,10 +34,10 @@ class HomePageUi6 extends StatelessWidget {
                   Align(
                     alignment: Alignment.topRight,
                     child: Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       height: 50,
                       width: 50,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0xfff2BEA1),
                         shape: BoxShape.circle,
                       ),
@@ -53,7 +53,7 @@ class HomePageUi6 extends StatelessWidget {
                           fontSize: 32,
                         ),
                   ),
-                  SerachBar(),
+                  const SerachBar(),
                   Expanded(
                     child: GridView.count(
                       crossAxisCount: 2,

@@ -22,8 +22,8 @@ class OnBoardingScreenUi13 extends StatelessWidget {
                 height: 60,
                 width: 63,
               ),
-              SizedBox(width: 10),
-              Text(
+              const SizedBox(width: 10),
+              const Text(
                 'EduVerse',
                 style: TextStyle(
                     fontWeight: FontWeight.w600,
@@ -35,7 +35,7 @@ class OnBoardingScreenUi13 extends StatelessWidget {
           SizedBox(
             height: size.height * .01,
           ),
-          Text(
+          const Text(
             'Empowering Minds, Igniting Futures.',
             style: TextStyle(fontWeight: FontWeight.w400, fontSize: 16),
           ),
@@ -47,7 +47,7 @@ class OnBoardingScreenUi13 extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return SingUpScreenUi13();
+                    return const SingUpScreenUi13();
                   },
                 ),
               );

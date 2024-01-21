@@ -16,7 +16,7 @@ class LocationCardViewPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       // height: 200,
       width: 335,
       decoration: BoxDecoration(
@@ -36,26 +36,26 @@ class LocationCardViewPage extends StatelessWidget {
                     color: Colors.white,
                     fontSize: 18),
               ),
-              RatingUi14(
+              const RatingUi14(
                 score: 4.7,
                 textColor: Colors.white,
               )
             ],
           ),
-          SizedBox(height: 10),
-          LocationAndProfilesStack(
+          const SizedBox(height: 10),
+          const LocationAndProfilesStack(
             locationName: "Tekergat, Sunamgnj",
             color: Colors.white,
             colorIcon: Colors.white,
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Row(
             children: [
-              Icon(Icons.access_time_rounded,color: Colors.white,),
+              const Icon(Icons.access_time_rounded,color: Colors.white,),
               Text("45 Minutes",style: kSfUiSytle.copyWith(color: Colors.white),)
             ],
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           RoundedButtonUi14(size: size, text: "See On The Map"),
         ],
       ),

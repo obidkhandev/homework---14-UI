@@ -11,11 +11,11 @@ GestureDetector arrowIcon(BuildContext context) {
       child: Container(
         height: 44,
         width: 44,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: kLightGrayColor,
           shape: BoxShape.circle,
         ),
-        child: Icon(Icons.arrow_back_ios_new,size: 18,),
+        child: const Icon(Icons.arrow_back_ios_new,size: 18,),
       ),
     ),
   );

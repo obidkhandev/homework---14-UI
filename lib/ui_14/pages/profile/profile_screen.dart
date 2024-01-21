@@ -29,7 +29,7 @@ class ProfileScreenUi14 extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return ProfileEditScreen();
+                          return const ProfileEditScreen();
                         },
                       ),
                     );
@@ -41,9 +41,9 @@ class ProfileScreenUi14 extends StatelessWidget {
                   iconColor: kPrimaryColorUi14,
                 ),
               ),
-              SizedBox(height: 30),
-              ProfileCircleImage(),
-              SizedBox(height: 10),
+              const SizedBox(height: 30),
+              const ProfileCircleImage(),
+              const SizedBox(height: 10),
               Text(
                 "Leonardo",
                 style: kSfUiSytle.copyWith(
@@ -52,26 +52,26 @@ class ProfileScreenUi14 extends StatelessWidget {
                   color: kTextColorUi14,
                 ),
               ),
-              Text(
+              const Text(
                 "leonardo@gmail.com",
                 style: kSfUiSytle,
               ),
               Container(
                 height: 80,
                 width: double.infinity,
-                padding: EdgeInsets.symmetric(horizontal: 10),
-                margin: EdgeInsets.symmetric(vertical: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                margin: const EdgeInsets.symmetric(vertical: 20),
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(16),
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         offset: Offset(0, 6),
                         blurRadius: 16,
                         color: Color.fromRGBO(189, 198, 211, 0.12),
                       )
                     ]),
-                child: Row(
+                child: const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     RichText2(
@@ -94,11 +94,11 @@ class ProfileScreenUi14 extends StatelessWidget {
               Container(
                 height: 344,
                 width: double.infinity,
-                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(20),
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       offset: Offset(0, 6),
                       blurRadius: 16,
@@ -109,56 +109,56 @@ class ProfileScreenUi14 extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    ProfilMenu(
+                    const ProfilMenu(
                       icon: CupertinoIcons.person,
                       text: "Profile",
                     ),
-                    LineBorder(
+                    const LineBorder(
                       height: 0,
                       width: double.infinity,
                     ),
-                    ProfilMenu(
+                    const ProfilMenu(
                       icon: Icons.bookmark_outline,
                       text: "Bookmarked",
                     ),
-                    LineBorder(
+                    const LineBorder(
                       height: 0,
                       width: double.infinity,
                     ),
                     Row(
                       children: [
                         Image.asset("assets/ui_14/images/trip.png"),
-                        SizedBox(width: 10),
+                        const SizedBox(width: 10),
                         Text(
                           "Previous Trips",
                           style: kSfUiSytle.copyWith(
                               color: kTextColorUi14, fontSize: 15),
                         ),
-                        Spacer(),
-                        Icon(
+                        const Spacer(),
+                        const Icon(
                           Icons.arrow_forward_ios_rounded,
                           color: kSubTextColorUi14,
                           size: 18,
                         )
                       ],
                     ),
-                    LineBorder(
+                    const LineBorder(
                       height: 0,
                       width: double.infinity,
                     ),
-                    ProfilMenu(
+                    const ProfilMenu(
                       icon: Icons.settings_outlined,
                       text: "Settings",
                     ),
-                    LineBorder(
+                    const LineBorder(
                       height: 0,
                       width: double.infinity,
                     ),
-                    ProfilMenu(
+                    const ProfilMenu(
                       icon: Icons.screen_search_desktop_outlined,
                       text: "Version",
                     ),
-                    LineBorder(
+                    const LineBorder(
                       height: 0,
                       width: double.infinity,
                     ),

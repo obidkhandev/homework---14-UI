@@ -24,7 +24,7 @@ class LoginBodyUi8 extends StatelessWidget {
         children: [
           Text(
             'Login'.toUpperCase(),
-            style: TextStyle(fontWeight: FontWeight.bold),
+            style: const TextStyle(fontWeight: FontWeight.bold),
           ),
           SizedBox(
             height: size.height * 0.03,
@@ -53,7 +53,7 @@ class LoginBodyUi8 extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return SingUpUi8();
+                    return const SingUpUi8();
                   },
                 ),
               );

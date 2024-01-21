@@ -16,7 +16,7 @@ class BottomNavBarUi14 extends StatefulWidget {
 class _BottoNavBarUi14State extends State<BottomNavBarUi14> {
   int _selectedIndex = 0;
 
-  List<Widget> _screens = [
+  final List<Widget>  _screens =  const [
     HomeScreenUi14(),
     ScheduleScreenUi14(),
     SearchScreenUi14(),
@@ -37,7 +37,7 @@ class _BottoNavBarUi14State extends State<BottomNavBarUi14> {
         selectedItemColor: kPrimaryColorUi14,
         unselectedItemColor: kSubTextColorUi14,
         backgroundColor: Colors.white,
-        items: [
+        items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(
               icon: Icon(Icons.calendar_month_outlined), label: "Calendar"),

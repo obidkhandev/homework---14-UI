@@ -13,10 +13,10 @@ class OrDividerUi8 extends StatelessWidget {
       child: Row(
         children: [
           buildDivider(),
-          Padding(
+          const Padding(
             padding: EdgeInsets.symmetric(horizontal: 10),
           ),
-          Text(
+          const Text(
             'OR',
             style: TextStyle(
               color: kPrimaryColorUi8,
@@ -30,7 +30,7 @@ class OrDividerUi8 extends StatelessWidget {
   }
 
   Expanded buildDivider() {
-    return Expanded(
+    return const Expanded(
       child: Divider(
         color: Color(0xFFD9D9D9),
         height: 1.5,

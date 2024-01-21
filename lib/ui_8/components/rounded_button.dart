@@ -19,10 +19,10 @@ class RoundedButtonUi8 extends StatelessWidget {
     return GestureDetector(
       onTap: press,
       child: Container(
-        margin: EdgeInsets.symmetric(vertical: 10),
+        margin: const EdgeInsets.symmetric(vertical: 10),
         width: size.width * 0.8,
         alignment: Alignment.center,
-        padding: EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(29),
           color: color,

@@ -32,7 +32,7 @@ class PostText extends StatelessWidget {
     return Container(
       margin: EdgeInsets.only(right: rightMarjin, left: leftMarjin, top: 5),
       alignment: Alignment.center,
-      padding: EdgeInsets.all(12),
+      padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
         color: backgrounColor,
         borderRadius: BorderRadius.only(
@@ -51,14 +51,14 @@ class PostText extends StatelessWidget {
             style: kSfUiSytle.copyWith(color: kTextColorUi14, fontSize: 14),
             maxLines: 4,
           ),
-          SizedBox(width: 20),
+          const SizedBox(width: 20),
           Row(
             children: [
               Text(
                 time,
                 style: kSfUiSytle.copyWith(fontSize: 12),
               ),
-              SizedBox(width: 5),
+              const SizedBox(width: 5),
               Icon(
                 Icons.done_all_rounded,
                 color: iconColor,

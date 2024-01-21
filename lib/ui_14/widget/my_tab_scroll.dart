@@ -30,7 +30,7 @@ class MyTabScroll extends StatelessWidget {
             color: color1,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 5,
         ),
         Container(
@@ -41,7 +41,7 @@ class MyTabScroll extends StatelessWidget {
             color: color2,
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 5,
         ),
         Container(

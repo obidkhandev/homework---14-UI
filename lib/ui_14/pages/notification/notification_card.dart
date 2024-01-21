@@ -42,7 +42,7 @@ class NotificationCard extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(width: 10),
+            const SizedBox(width: 10),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -56,14 +56,14 @@ class NotificationCard extends StatelessWidget {
                           fontSize: 18,
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Text(
                         time,
                         style: kSfUiSytle.copyWith(fontSize: 11),
                       ),
                     ],
                   ),
-                  SizedBox(height: 5),
+                  const SizedBox(height: 5),
                   Text(
                     text,
                     style: kSfUiSytle.copyWith(overflow: TextOverflow.ellipsis),

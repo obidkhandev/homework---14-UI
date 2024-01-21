@@ -17,7 +17,7 @@ class HomeScreenUi7 extends StatelessWidget {
           children: [
             Container(
               padding:
-                  EdgeInsets.only(left: 20, top: 20, right: 20, bottom: 40),
+                  const EdgeInsets.only(left: 20, top: 20, right: 20, bottom: 40),
               width: double.infinity,
               decoration: BoxDecoration(
                 color: kPrimaryColorUi7.withOpacity(.03),
@@ -30,17 +30,17 @@ class HomeScreenUi7 extends StatelessWidget {
                 runSpacing: 20,
                 spacing: 20,
                 children: [
-                  LineCardUi7(
+                  const LineCardUi7(
                     title: 'Confirmed Case',
                     effectedNum: 1062,
                     iconColor: Color(0xFFFF8C00),
                   ),
-                  LineCardUi7(
+                  const LineCardUi7(
                     title: 'Total Deaths',
                     effectedNum: 75,
                     iconColor: Color(0xFFFF2D55),
                   ),
-                  LineCardUi7(
+                  const LineCardUi7(
                     title: 'Total Recovered',
                     effectedNum: 689,
                     iconColor: Color(0xFF50E3C2),
@@ -48,7 +48,7 @@ class HomeScreenUi7 extends StatelessWidget {
                   LineCardUi7(
                     title: 'New Cases',
                     effectedNum: 95,
-                    iconColor: Color(0xFF5856D6),
+                    iconColor: const Color(0xFF5856D6),
                     press: () {
                       Navigator.push(
                         context,
@@ -63,7 +63,7 @@ class HomeScreenUi7 extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Padding(
@@ -78,11 +78,11 @@ class HomeScreenUi7 extends StatelessWidget {
                         .titleLarge!
                         .copyWith(fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   buildPreventCardUi7(),
-                  SizedBox(height: 40),
+                  const SizedBox(height: 40),
                   buildHelpCardUi7(context),
                 ],
               ),
@@ -94,7 +94,7 @@ class HomeScreenUi7 extends StatelessWidget {
   }
 
   Row buildPreventCardUi7() {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         PreventitonCardUi7(
@@ -113,8 +113,8 @@ class HomeScreenUi7 extends StatelessWidget {
     );
   }
 
-  Container buildHelpCardUi7(BuildContext context) {
-    return Container(
+  SizedBox buildHelpCardUi7(BuildContext context) {
+    return SizedBox(
       height: 150,
       width: double.infinity,
       child: Stack(
@@ -129,7 +129,7 @@ class HomeScreenUi7 extends StatelessWidget {
             height: 130,
             width: double.infinity,
             decoration: BoxDecoration(
-              gradient: LinearGradient(
+              gradient: const LinearGradient(
                 colors: [
                   Color(0xFF60BE93),
                   Color(0xFF1B8D59),

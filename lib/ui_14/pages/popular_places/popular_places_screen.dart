@@ -34,7 +34,7 @@ class PopularPlacesScreenUi14 extends StatelessWidget {
               const SizedBox(height: 20),
               GridView(
                 shrinkWrap: true,
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     mainAxisExtent: 238,
                     mainAxisSpacing: 20,

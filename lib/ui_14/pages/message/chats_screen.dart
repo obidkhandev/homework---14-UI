@@ -32,7 +32,7 @@ class ChatsScreen extends StatelessWidget {
                 ),
               ),
             ),
-            CircleSmallButtonUi14(
+            const CircleSmallButtonUi14(
               width: 48,
               height: 48,
               backgroundColor: kPrimaryColorUi14, icon: Icons.mic, iconColor: Colors.white)
@@ -42,16 +42,16 @@ class ChatsScreen extends StatelessWidget {
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.only(top: 56, bottom: 20),
+          padding: const EdgeInsets.only(top: 56, bottom: 20),
           child: Column(
             children: [
               buildAppBar(context),
-              SizedBox(height: 20),
-              LineBorder(
+              const SizedBox(height: 20),
+              const LineBorder(
                 height: 0,
                 width: double.infinity,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Container(
                 height: 32,
                 width: 60,
@@ -60,7 +60,7 @@ class ChatsScreen extends StatelessWidget {
                   color: kLightGrayColor,
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: Text(
+                child: const Text(
                   "Today",
                   style: kSfUiSytle,
                 ),
@@ -68,14 +68,14 @@ class ChatsScreen extends StatelessWidget {
               SizedBox(
                 height: size.height * 0.1,
               ),
-              PostText(
+              const PostText(
                   text: "Hello",
                   rightMarjin: 20,
                   leftMarjin: 248,
                   time: "9:24",
                   bottomRight: 0,
                   backgrounColor: Color.fromRGBO(229, 244, 255, 1)),
-              PostText(
+              const PostText(
                   rightMarjin: 20,
                   leftMarjin: 70,
                   time: "9:30",
@@ -84,14 +84,14 @@ class ChatsScreen extends StatelessWidget {
                   backgrounColor: Color.fromRGBO(229, 244, 255, 1),
                   text:
                       "Thank you very mouch for your \ntraveling, we really like the\napartments. we will stay here for\nanather 5 days..."),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.only(left: 20),
                 child: Row(
                   children: [
                     Image.asset("assets/ui_14/images/Ellipse 897.png"),
                     // SizedBox(width: 10),
-                    Column(
+                    const Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         PostText(
@@ -113,13 +113,13 @@ class ChatsScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.only(left: 20),
                 child: Row(
                   children: [
                     Image.asset("assets/ui_14/images/Ellipse 901.png"),
-                    PostText(
+                    const PostText(
                       bottomLeft: 0,
                       text:
                           "We are arriving today at 01:45,\n will someone be at home?",
@@ -130,15 +130,15 @@ class ChatsScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 10),
-              PostText(
+              const SizedBox(height: 10),
+              const PostText(
                 text: "I will be at home",
                 rightMarjin: 20,
                 time: "9:39",
                 backgrounColor: Color.fromRGBO(229, 244, 255, 1),
                 leftMarjin: 160,
               ),
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
             ],
           ),
         ),
@@ -158,7 +158,7 @@ class ChatsScreen extends StatelessWidget {
                   fontSize: 18,
                   fontWeight: FontWeight.w600,
                   color: kTextColorUi14),
-              children: [
+              children: const [
                 TextSpan(
                   text: "Sajib Rahman\n",
                 ),
@@ -175,7 +175,7 @@ class ChatsScreen extends StatelessWidget {
                 ),
               ]),
         ),
-        CircleSmallButtonUi14(
+        const CircleSmallButtonUi14(
           height: 44,
           width: 44,
           backgroundColor: kLightGrayColor,

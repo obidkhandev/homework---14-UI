@@ -34,7 +34,7 @@ class LineReportChartUi7 extends StatelessWidget {
 }
 
 List<FlSpot> getSports() {
-  return [
+  return const [
     FlSpot(0, .5),
     FlSpot(1, 1.5),
     FlSpot(2, .5),

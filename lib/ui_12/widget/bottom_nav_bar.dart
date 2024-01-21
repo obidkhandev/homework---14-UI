@@ -41,7 +41,7 @@ class BottomNavBar extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return HomePageUi12();
+                    return const HomePageUi12();
                   },
                 ),
               );
@@ -51,21 +51,21 @@ class BottomNavBar extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return SearchPage();
+                    return const SearchPage();
                   },
                 ),
               );
             },
             child: IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.search,
               ),
             ),
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.favorite,
             ),
           ),

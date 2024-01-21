@@ -11,7 +11,7 @@ class Wishlist extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: 10, left: 22, bottom: 30),
+      padding: const EdgeInsets.only(top: 10, left: 22, bottom: 30),
       height: 512,
       width: 345,
       decoration: const BoxDecoration(
@@ -34,9 +34,7 @@ class Wishlist extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
-            height: 80,
-          ),
+          const SizedBox(height: 80),
           const MyCart(
             image: 'assets/ui_12/images/image4.png',
             productName: 'Berkely',
@@ -55,13 +53,13 @@ class Wishlist extends StatelessWidget {
             productStyle: 'Style #36252 0YK0G 1000',
             tag: 'Wallet with chain',
           ),
-          Spacer(),
+          const Spacer(),
           ButtonAddCard(
             title: 'Add all to cart',
             width: 190,
-            height: 34,
+            height: 44,
             press: () {
-              BuyCard();
+              const BuyCard();
             },
           ),
         ],
@@ -69,4 +67,3 @@ class Wishlist extends StatelessWidget {
     );
   }
 }
-

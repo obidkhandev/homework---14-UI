@@ -13,7 +13,7 @@ class FavoritePlaces extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.only(top: 56, left: 20, right: 20, bottom: 20),
+          padding: const EdgeInsets.only(top: 56, left: 20, right: 20, bottom: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -22,7 +22,7 @@ class FavoritePlaces extends StatelessWidget {
                 firsticon: arrowIcon(context),
                 text: "Favorite Places",
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Text(
                 "Favorite Places",
                 style: kSfUiSytle.copyWith(
@@ -31,12 +31,12 @@ class FavoritePlaces extends StatelessWidget {
                   color: kTextColorUi14,
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               SizedBox(
                 height: size.height,
                 width: double.infinity,
                 child: GridView(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       mainAxisExtent: 200,
                       mainAxisSpacing: 20,

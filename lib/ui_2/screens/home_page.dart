@@ -5,6 +5,7 @@ import 'package:modul_4_homework_obidxon/ui_2/screens/detail_page.dart';
 import 'package:modul_4_homework_obidxon/ui_2/widgets/counter.dart';
 import 'package:modul_4_homework_obidxon/ui_2/widgets/my_header.dart';
 
+// ignore: camel_case_types
 class HomePageUi_2 extends StatelessWidget {
   const HomePageUi_2({super.key});
 

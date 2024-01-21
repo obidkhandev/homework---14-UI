@@ -12,12 +12,12 @@ class DateAndCalendar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Icon(
+        const Icon(
           Icons.calendar_month_outlined,
           color: kSubTextColorUi14,
           size: 20,
         ),
-        SizedBox(width: 10),
+        const SizedBox(width: 10),
         Text(
           date,
           style: kSfUiSytle.copyWith(fontSize: 13),

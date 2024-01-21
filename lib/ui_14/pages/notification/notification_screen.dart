@@ -47,46 +47,46 @@ class NotificationScreen extends StatelessWidget {
               ],
             ),
           ),
-          LineBorder(
+          const LineBorder(
             height: 0,
             width: double.infinity,
           ),
           Container(
-            margin: EdgeInsets.only(top: 20),
+            margin: const EdgeInsets.only(top: 20),
             // padding: EdgeInsets.symmetric(vertical: 10),
             alignment: Alignment.center,
             width: double.infinity,
             height: 76,
-            color: Color.fromRGBO(229, 244, 255, 1),
-            child: NotificationCard(
+            color: const Color.fromRGBO(229, 244, 255, 1),
+            child: const NotificationCard(
               topSize: 10,
               image: "assets/ui_14/images/Ellipse 897 (1).png",
               text: "Get 60% off in our first booking",
               time: "Sun,12:40pm",
             ),
           ),
-          NotificationCard(
+          const NotificationCard(
             topSize: 10,
               image: "assets/ui_14/images/Ellipse 897 (2).png",
               text: "Get 60% off in our first booking",
               time: "Mon,11:50pm",
             ),
-           NotificationCard(
+           const NotificationCard(
               image: "assets/ui_14/images/Ellipse 897 (3).png",
               text: "Get 60% off in our first booking",
               time: "Tue,10:56pm",
             ),
-             NotificationCard(
+            const NotificationCard(
               image: "assets/ui_14/images/Ellipse 897 (4).png",
               text: "Get 60% off in our first booking",
               time: "Wed,12:40pm",
             ),
-             NotificationCard(
+            const NotificationCard(
               image: "assets/ui_14/images/Ellipse 897 (5).png",
               text: "Get 60% off in our first booking",
               time: "Fri,11:50pm",
             ),
-             NotificationCard(
+            const NotificationCard(
               image: "assets/ui_14/images/Ellipse 897 (6).png",
               text: "Get 60% off in our first booking",
               time: "Sat,10:56pm",

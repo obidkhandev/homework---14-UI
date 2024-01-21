@@ -20,7 +20,7 @@ class LocationAndProfilesStack extends StatelessWidget {
         Row(
           children: [
             LocationNameAndIcon(colorIcon: colorIcon, locationName: locationName, color: color),
-            SizedBox(
+            const SizedBox(
               width: 10
             ),
           ],

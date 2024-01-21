@@ -19,11 +19,11 @@ class PopularPlaceImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 0),
+      margin: const EdgeInsets.only(top: 0),
       alignment: Alignment.topRight,
       width: double.infinity,
       height: 124,
-      padding: EdgeInsets.all(10),
+      padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage(image),
@@ -35,7 +35,7 @@ class PopularPlaceImage extends StatelessWidget {
             context,
             MaterialPageRoute(
               builder: (context) {
-                return FavoritePlaces();
+                return const FavoritePlaces();
               },
             ),
           );
@@ -43,7 +43,7 @@ class PopularPlaceImage extends StatelessWidget {
         backgroundColor: kTextColorUi14.withOpacity(.2),
         icon: icon,
         iconColor: iconColor,
-      ) : Text(""),
+      ) : const Text(""),
     );
   }
 }

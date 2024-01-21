@@ -16,8 +16,8 @@ class SocialMedia extends StatelessWidget {
           Container(
             height: 44,
             width: 44,
-              padding: EdgeInsets.only(left: 12,right: 12),
-            decoration: BoxDecoration(
+              padding: const EdgeInsets.only(left: 12,right: 12),
+            decoration: const BoxDecoration(
               shape: BoxShape.circle,
               color: kPrimaryColorUi14,
             ),
@@ -26,28 +26,17 @@ class SocialMedia extends StatelessWidget {
           Container(
             height: 44,
             width: 44,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(image: AssetImage('assets/ui_14/images/instagram2.png'),)
-              // gradient: LinearGradient(
-              //   end: Alignment.bottomRight,
-              //   // stops: ,
-              //   begin: Alignment.topLeft,
-              //   colors: [
-              //   Color.fromRGBO(255, 213, 33, 1).withOpacity(.7),
-              //     Color.fromRGBO(255, 213, 33, 1).withOpacity(.7),
-              //     Color.fromRGBO(245, 0, 0, 1).withOpacity(.7),
-              //     Color.fromRGBO(185, 0, 180, 1).withOpacity(.7),
-              //     Color.fromRGBO(185, 0, 180, 1).withOpacity(.7),
-              //     Color.fromRGBO(185, 0, 180, 1).withOpacity(.7),
-              // ],),
+              
             ),
             child: Image.asset('assets/ui_14/images/instagram.png'),
           ),
           Container(
             height: 44,
             width: 44,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: kPrimaryColorUi14,
               shape: BoxShape.circle,
             ),

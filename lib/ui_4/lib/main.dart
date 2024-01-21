@@ -31,7 +31,7 @@ class MyAppUi4 extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: WelcomePage(),
+      home: const WelcomePage(),
     );
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_3/constants.dart';
 import 'package:modul_4_homework_obidxon/ui_3/screens/home_page.dart';
 
+// ignore: camel_case_types
 class MyAppUi_3 extends StatelessWidget {
   const MyAppUi_3({super.key});
 

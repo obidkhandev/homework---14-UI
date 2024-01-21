@@ -34,7 +34,9 @@ class _ProductDescriptionPageState extends State<ProductDescriptionPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        // elevation: 0,
         backgroundColor: Colors.white,
         leading: IconButton(
           onPressed: () {},
@@ -318,9 +320,9 @@ the order is placed.
                 ],
               ),
             ),
-            const SizedBox(
-              height: 20,
-            ),
+            // const SizedBox(
+            //   height: 20,
+            // ),
           ],
         ),
       ),

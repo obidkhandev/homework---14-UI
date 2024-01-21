@@ -14,12 +14,12 @@ class CircleUi14 extends StatelessWidget {
       margin: EdgeInsets.only(left: left),
       height: 24,
       width: 24,
-      padding: EdgeInsets.all(6),
+      padding: const EdgeInsets.all(6),
       decoration: BoxDecoration(
           color: kViewContainerColorUi14.withOpacity(.9),
           shape: BoxShape.circle),
       child: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           shape: BoxShape.circle,
           color: kPrimaryColorUi14,
         ),

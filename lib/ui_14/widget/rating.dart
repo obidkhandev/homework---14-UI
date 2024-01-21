@@ -17,12 +17,12 @@ class RatingUi14 extends StatelessWidget {
     return Row(
       children: [
         for (int i = 0; i < starCount;i++)
-          Icon(
+          const Icon(
             Icons.star,
             color: Colors.amber,
             size: 15,
           ),
-          SizedBox(width: 5),
+          const SizedBox(width: 5),
         Text(
           "$score",
           style: kSfUiSytle.copyWith(color: textColor),

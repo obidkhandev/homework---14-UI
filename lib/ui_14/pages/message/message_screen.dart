@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/message/chat_card.dart';
@@ -15,10 +14,10 @@ class MessageScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Padding(
-        padding: EdgeInsets.only(left: 20, right: 20, bottom: 20, top: 56),
+        padding: const EdgeInsets.only(left: 20, right: 20, bottom: 20, top: 56),
         child: Column(
           children: [
-            MyAppBar2(
+            const MyAppBar2(
               title: "Messages",
               child: CircleSmallButtonUi14(
                 backgroundColor: kLightGrayColor,
@@ -29,7 +28,7 @@ class MessageScreen extends StatelessWidget {
                 iconColor: kTextColorUi14,
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -47,14 +46,14 @@ class MessageScreen extends StatelessWidget {
                   border: InputBorder.none,
                   hintText: "Search for chats & messages",
                   hintStyle: kSfUiSytle.copyWith(fontSize: 16),
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.search_rounded,
                     color: kSubTextColorUi14,
                   ),
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             ChatCard(
@@ -69,13 +68,13 @@ class MessageScreen extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return ChatsScreen();
+                      return const ChatsScreen();
                     },
                   ),
                 );
               },
             ),
-            ChatCard(
+            const ChatCard(
               image: "assets/ui_14/images/Ellipse 901.png",
               time: "08:42",
               iconColor: Colors.green,
@@ -85,7 +84,7 @@ class MessageScreen extends StatelessWidget {
               onlineColor: kSubTextColorUi14,
               isRead: true,
             ),
-            ChatCard(
+            const ChatCard(
               image: "assets/ui_14/images/Ellipse 897.png",
               time: "Yesterday",
               iconColor: kSubTextColorUi14,
@@ -94,7 +93,7 @@ class MessageScreen extends StatelessWidget {
               onlineColor: Colors.green,
               isRead: true,
             ),
-            ChatCard(
+            const ChatCard(
               image: "assets/ui_14/images/Ellipse 901 (1).png",
               time: "07:56",
               iconColor: kSubTextColorUi14,
@@ -103,7 +102,7 @@ class MessageScreen extends StatelessWidget {
               onlineColor: Colors.red,
               // isRead: true,
             ),
-            ChatCard(
+            const ChatCard(
               image: "assets/ui_14/images/Ellipse 903.png",
               time: "05:52",
               iconColor: Colors.green,

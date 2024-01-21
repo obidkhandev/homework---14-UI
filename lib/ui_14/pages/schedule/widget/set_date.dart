@@ -9,14 +9,14 @@ class SetDate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 20),
+      margin: const EdgeInsets.symmetric(vertical: 20),
       height: 150,
-      padding: EdgeInsets.all(16),
+      padding: const EdgeInsets.all(16),
       width: double.infinity,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(24),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
               offset: Offset(0, 6),
               blurRadius: 20,
@@ -35,17 +35,17 @@ class SetDate extends StatelessWidget {
                   fontSize: 20,
                 ),
               ),
-              Spacer(),
+              const Spacer(),
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.arrow_back_ios_new,
                   size: 22,
                 ),
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.arrow_forward_ios_rounded,
                   size: 22,
                 ),
@@ -55,15 +55,15 @@ class SetDate extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              SetDateRichText(
+              const SetDateRichText(
                 firstText: "S",
                 secondText: "18",
               ),
-              SetDateRichText(
+              const SetDateRichText(
                 firstText: "M",
                 secondText: "19",
               ),
-              SetDateRichText(
+              const SetDateRichText(
                 firstText: "W",
                 secondText: "21",
               ),
@@ -75,7 +75,7 @@ class SetDate extends StatelessWidget {
                   color: kPrimaryColorUi14,
                   borderRadius: BorderRadius.circular(12),
                 ),
-                child: SetDateRichText(
+                child: const SetDateRichText(
                   firstText: "T",
                   firstTextColor: Colors.white,
                   secondText: "22",
@@ -83,11 +83,11 @@ class SetDate extends StatelessWidget {
     
                 ),
               ),
-              SetDateRichText(
+              const SetDateRichText(
                 firstText: "F",
                 secondText: "23",
               ),
-              SetDateRichText(
+              const SetDateRichText(
                 firstText: "S",
                 secondText: "24",
               ),
@@ -124,7 +124,7 @@ class SetDateRichText extends StatelessWidget {
           text: secondText,
           style: TextStyle(color: secondTextColor,),
         )
-      ]),
+      ],),
     );
   }
 }

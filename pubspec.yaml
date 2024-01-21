@@ -85,6 +85,9 @@ flutter:
     - assets/ui_9/icons/
     - assets/ui_10/images/
     - assets/ui_10/icons/
+    - assets/ui_11/images/
+    - assets/ui_11/icons/
+    - assets/ui_11/images/category_img/
     - assets/ui_12/images/
     - assets/ui_13/images/
     - assets/ui_14/images/
@@ -143,6 +146,9 @@ flutter:
           weight: 700
         - asset: assets/ui_6/fonts/Cairo/Cairo-Black.ttf
           weight: 900
+    - family: SF-Pro
+      fonts:
+        - asset: assets/ui_11/fonts/SF_Pro/SF-Pro-Display-Bold.otf
 
   #         weight: 700
   #

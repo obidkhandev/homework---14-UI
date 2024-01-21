@@ -10,7 +10,7 @@ class OwnHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(right: 12),
+      margin: const EdgeInsets.only(right: 12),
       height: 195,
       width: 380,
       decoration: BoxDecoration(

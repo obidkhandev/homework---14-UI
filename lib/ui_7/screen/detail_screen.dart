@@ -11,17 +11,17 @@ class DetailScreenUi7 extends StatelessWidget {
     return Scaffold(
       appBar: buildDetailsAppBar(context),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: [
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 25),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 25),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: [
                   BoxShadow(
-                    offset: Offset(0, 21),
+                    offset: const Offset(0, 21),
                     blurRadius: 53,
                     color: Colors.black.withOpacity(0.05),
                   )
@@ -31,14 +31,14 @@ class DetailScreenUi7 extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   buildTitleMoreIcon(),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   buildCaseNumber(context),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
-                  Text(
+                  const Text(
                     'From Health Center',
                     style: TextStyle(
                       fontWeight: FontWeight.w200,
@@ -46,9 +46,9 @@ class DetailScreenUi7 extends StatelessWidget {
                       fontSize: 16,
                     ),
                   ),
-                  SizedBox(height: 15),
-                  WeeklyChart(),
-                  SizedBox(height: 15),
+                  const SizedBox(height: 15),
+                  const WeeklyChart(),
+                  const SizedBox(height: 15),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -65,17 +65,17 @@ class DetailScreenUi7 extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Container(
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                        offset: Offset(0, 21),
+                        offset: const Offset(0, 21),
                         blurRadius: 53,
                         color: Colors.black.withOpacity(.05))
                   ]),
@@ -84,14 +84,14 @@ class DetailScreenUi7 extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
+                      const Text(
                         'Global Map',
                         style: TextStyle(fontSize: 15),
                       ),
                       SvgPicture.asset('assets/ui_7/icons/more.svg'),
                     ],
                   ),
-                  SizedBox(height: 10,),
+                  const SizedBox(height: 10,),
                   SvgPicture.asset('assets/ui_7/icons/map.svg'),
                 ],
               ),
@@ -108,14 +108,14 @@ class DetailScreenUi7 extends StatelessWidget {
         children: [
           TextSpan(
             text: '$persentage%\n',
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 20,
               color: kPrimaryColorUi7,
             ),
           ),
           TextSpan(
             text: title,
-            style: TextStyle(color: kTextMediumColorUi7, height: 1.5),
+            style: const TextStyle(color: kTextMediumColorUi7, height: 1.5),
           ),
         ],
       ),
@@ -132,7 +132,7 @@ class DetailScreenUi7 extends StatelessWidget {
               .displaySmall!
               .copyWith(color: kPrimaryColorUi7, height: 1.2),
         ),
-        Text(
+        const Text(
           '5.9%',
           style: TextStyle(color: kPrimaryColorUi7),
         ),
@@ -145,7 +145,7 @@ class DetailScreenUi7 extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(
+        const Text(
           'New Cases',
           style: TextStyle(
             color: kTextMediumColorUi7,
@@ -166,7 +166,7 @@ class DetailScreenUi7 extends StatelessWidget {
         onPressed: () {
           Navigator.pop(context);
         },
-        icon: Icon(
+        icon: const Icon(
           Icons.arrow_back_ios,
           color: kPrimaryColorUi7,
         ),

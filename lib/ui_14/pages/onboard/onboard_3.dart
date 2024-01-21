@@ -25,7 +25,7 @@ class ThirdOnBoardScreenUi14 extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return SingInScreenUi14();
+                    return const SingInScreenUi14();
                   },
                 ),
               );
@@ -46,7 +46,7 @@ class ThirdOnBoardScreenUi14 extends StatelessWidget {
             text:
                 'To get the best of your adventure you just need to leave and go where you like. we are waiting for you',
           ),
-          SizedBox(height: 30),
+          const SizedBox(height: 30),
           const MyTabScroll(
             color1: kBgColorUi14,
             color3: kPrimaryColorUi14,
@@ -65,7 +65,7 @@ class ThirdOnBoardScreenUi14 extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return SingInScreenUi14();
+                    return const SingInScreenUi14();
                   },
                 ),
               );

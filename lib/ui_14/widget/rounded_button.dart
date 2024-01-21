@@ -28,7 +28,7 @@ class RoundedButtonUi14 extends StatelessWidget {
             color: kPrimaryColorUi14, borderRadius: BorderRadius.circular(16)),
         child: Text(
           text,
-          style: TextStyle(
+          style: const TextStyle(
             fontFamily: "SF UI Display",
             fontSize: 16,
             fontWeight: FontWeight.w600,

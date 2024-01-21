@@ -18,11 +18,11 @@ class _ForgotPasswordUi14State extends State<ForgotPasswordUi14> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.only(left: 20, right: 20, top: 50),
+        padding: const EdgeInsets.only(left: 20, right: 20, top: 50),
         child: Column(
           children: [
             arrowIcon(context),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             const Text(
               "Forgot password",
               style: TextStyle(
@@ -46,7 +46,7 @@ class _ForgotPasswordUi14State extends State<ForgotPasswordUi14> {
             EmailFieldContainer(
               child: TextField(
                 onSubmitted: (value) {},
-                decoration: InputDecoration(border: InputBorder.none),
+                decoration: const InputDecoration(border: InputBorder.none),
               ),
             ),
             const SizedBox(height: 20),
@@ -58,7 +58,7 @@ class _ForgotPasswordUi14State extends State<ForgotPasswordUi14> {
                 return showDialog<String>(
                   context: context,
                   builder: (context) {
-                    return MyAlertDialog();
+                    return const MyAlertDialog();
                   },
                 );
               },

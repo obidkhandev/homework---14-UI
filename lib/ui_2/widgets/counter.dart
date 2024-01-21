@@ -17,7 +17,7 @@ class Counter extends StatelessWidget {
     return Column(
       children: [
         Container(
-          padding: EdgeInsets.all(5),
+          padding: const EdgeInsets.all(5),
           height: 20,
           width: 20,
           decoration: BoxDecoration(
@@ -35,7 +35,7 @@ class Counter extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Text(

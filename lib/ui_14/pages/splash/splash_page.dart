@@ -33,7 +33,7 @@ class _SplashScreenState extends State<SplashScreenUi14>
           context,
           MaterialPageRoute(
             builder: (context) {
-              return FirstOnBoardScreenUi14();
+              return const FirstOnBoardScreenUi14();
             },
           ),
         );

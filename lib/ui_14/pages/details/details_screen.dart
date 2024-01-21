@@ -20,7 +20,7 @@ class DetailScreenUi14 extends StatelessWidget {
             DetailBackgroundUi14(size: size),
             Container(
               margin: EdgeInsets.only(top: size.height / 2.35),
-              padding: EdgeInsets.all(20),
+              padding: const EdgeInsets.all(20),
               // height: size.height * 0.5,
               decoration: const BoxDecoration(
                 color: Colors.white,
@@ -80,15 +80,15 @@ class DetailScreenUi14 extends StatelessWidget {
                         Icons.location_on_outlined,
                         color: kSubTextColorUi14,
                       ),
-                      Text(
+                      const Text(
                         "Tekergat",
                         style: kSfUiSytle,
                       ),
                       SizedBox(width: size.width * 0.15),
-                      RatingUi14(
+                      const RatingUi14(
                         score: 4.7,
                       ),
-                      Text(
+                      const Text(
                         "(2498)",
                         style: kSfUiSytle,
                       ),
@@ -99,7 +99,7 @@ class DetailScreenUi14 extends StatelessWidget {
                           color: kPrimaryColorUi14,
                         ),
                       ),
-                      Text(
+                      const Text(
                         "Person",
                         style: kSfUiSytle
                       ),
@@ -117,7 +117,7 @@ class DetailScreenUi14 extends StatelessWidget {
                         onTap: () {
                           Future(() {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => PopularPlacesScreenUi14()));
+            context, MaterialPageRoute(builder: (context) => const PopularPlacesScreenUi14()));
       });
                         },
                         child: Container(
@@ -163,7 +163,7 @@ class DetailScreenUi14 extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   RoundedButtonUi14(
                     size: size,
                     text: "Book Now",
@@ -172,7 +172,7 @@ class DetailScreenUi14 extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           builder: (context) {
-                            return ViewScreenUi14();
+                            return const ViewScreenUi14();
                           },
                         ),
                       );

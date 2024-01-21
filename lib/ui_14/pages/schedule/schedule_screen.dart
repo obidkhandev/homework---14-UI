@@ -33,12 +33,12 @@ class ScheduleScreenUi14 extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                MyNotifications(
+                const MyNotifications(
                   marjinRight: 0,
                 )
               ],
             ),
-            SetDate(),
+            const SetDate(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -54,14 +54,14 @@ class ScheduleScreenUi14 extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             MySchedule(
               press: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return PopularPackageScreen();
+                      return const PopularPackageScreen();
                     },
                   ),
                 );
@@ -70,12 +70,12 @@ class ScheduleScreenUi14 extends StatelessWidget {
               text: "Niladri Reservoir",
               locationName: "Tekergat, Sunamgnj",
             ),
-            MySchedule(
+            const MySchedule(
               image: "assets/ui_14/images/Rectangle 29 (1).png",
               text: "High Rech Park",
               locationName: "Zeero Point, Sylhet",
             ),
-            MySchedule(
+            const MySchedule(
               image: "assets/ui_14/images/Rectangle 29 (2).png",
               text: "Darma Reservoir",
               locationName: "Darma, Kuningan",

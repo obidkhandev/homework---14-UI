@@ -46,10 +46,11 @@ class LineCardUi7 extends StatelessWidget {
                           'assets/ui_7/icons/running.svg',
                           height: 12,
                           width: 12,
+                          // ignore: deprecated_member_use
                           color: iconColor,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 5,
                       ),
                       Text(
@@ -68,7 +69,7 @@ class LineCardUi7 extends StatelessWidget {
                         padding: const EdgeInsets.all(10.0),
                         child: RichText(
                           text: TextSpan(
-                            style: TextStyle(color: kTextColorUi7),
+                            style: const TextStyle(color: kTextColorUi7),
                             children: [
                               TextSpan(
                                 text: '$effectedNum \n',
@@ -79,7 +80,7 @@ class LineCardUi7 extends StatelessWidget {
                                       fontWeight: FontWeight.bold,
                                     ),
                               ),
-                              TextSpan(
+                              const TextSpan(
                                 text: 'People',
                                 style: TextStyle(
                                   fontSize: 12,
@@ -90,7 +91,7 @@ class LineCardUi7 extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Expanded(
+                      const Expanded(
                         child: LineReportChartUi7(),
                       ),
                     ],

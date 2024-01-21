@@ -28,16 +28,16 @@ class _SingInScreenUi14State extends State<SingInScreenUi14> {
             width: double.infinity,
             child: Padding(
               padding:
-                  EdgeInsets.only(left: 20, right: 20, bottom: 60, top: 50),
+                  const EdgeInsets.only(left: 20, right: 20, bottom: 60, top: 50),
               child: Column(
                 // crossAxisAlignment: CrossAxisAlignment.center,
                 // mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   arrowIcon(context),
-                  SizedBox(
+                  const SizedBox(
                     height: 20
                   ),
-                  Text(
+                  const Text(
                     'Sign in now',
                     style: TextStyle(
                       fontFamily: 'SF UI Display',
@@ -45,8 +45,8 @@ class _SingInScreenUi14State extends State<SingInScreenUi14> {
                       fontWeight: FontWeight.w400,
                     ),
                   ),
-                  SizedBox(height: 5),
-                  Text(
+                  const SizedBox(height: 5),
+                  const Text(
                     'Please sign in to continue our app',
                     style: TextStyle(
                       fontFamily: 'SF UI Display',
@@ -56,8 +56,8 @@ class _SingInScreenUi14State extends State<SingInScreenUi14> {
                     ),
                   ),
                   // SizedBox(height: 20),
-                  EmailFieldContainer(
-                    child: const TextField(
+                  const EmailFieldContainer(
+                    child: TextField(
                       decoration: InputDecoration(border: InputBorder.none),
                     ),
                   ),
@@ -81,7 +81,7 @@ class _SingInScreenUi14State extends State<SingInScreenUi14> {
                       ),
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   const Align(
                     alignment: Alignment.topRight,
                     child: Text(
@@ -103,7 +103,7 @@ class _SingInScreenUi14State extends State<SingInScreenUi14> {
                         context,
                         MaterialPageRoute(
                           builder: (context) {
-                            return SingUpScreenUi14();
+                            return const SingUpScreenUi14();
                           },
                         ),
                       );

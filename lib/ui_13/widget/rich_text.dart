@@ -20,7 +20,7 @@ class MyRichText extends StatelessWidget {
           TextSpan(text: firstText),
           TextSpan(
             text: secondText,
-            style: TextStyle(color: kPrimaryColorUi13),
+            style: const TextStyle(color: kPrimaryColorUi13),
           ),
         ],
       ),

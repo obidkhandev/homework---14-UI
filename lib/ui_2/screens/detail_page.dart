@@ -4,6 +4,7 @@ import 'package:modul_4_homework_obidxon/ui_2/widgets/my_header.dart';
 import 'package:modul_4_homework_obidxon/ui_2/widgets/prevent_cart.dart';
 import 'package:modul_4_homework_obidxon/ui_2/widgets/symptoms_cart.dart';
 
+// ignore: camel_case_types
 class DetailPageUi_2 extends StatelessWidget {
   const DetailPageUi_2({super.key});
 

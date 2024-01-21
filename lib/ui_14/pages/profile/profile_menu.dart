@@ -18,13 +18,13 @@ class ProfilMenu extends StatelessWidget {
           icon,
           color: kSubTextColorUi14,
         ),
-        SizedBox(width: 10),
+        const SizedBox(width: 10),
         Text(
           text,
           style: kSfUiSytle.copyWith(color: kTextColorUi14, fontSize: 15),
         ),
-        Spacer(),
-        Icon(
+        const Spacer(),
+        const Icon(
           Icons.arrow_forward_ios_rounded,
           color: kSubTextColorUi14,
           size: 18,

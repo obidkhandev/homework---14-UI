@@ -57,7 +57,7 @@ class TravelCard extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 14),
+          const SizedBox(height: 14),
           Row(
             children: [
               Text(
@@ -77,7 +77,7 @@ class TravelCard extends StatelessWidget {
               ),
               Text(
                 "$rating",
-                style: TextStyle(
+                style: const TextStyle(
                   fontWeight: FontWeight.w400,
                   fontSize: 15,
                   color: kTextColorUi14,

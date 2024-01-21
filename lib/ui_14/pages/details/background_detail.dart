@@ -13,10 +13,10 @@ class DetailBackgroundUi14 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(left: 20, right: 20, top: 56),
+      padding: const EdgeInsets.only(left: 20, right: 20, top: 56),
       height: size.height * 0.5,
       width: double.infinity,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         image: DecorationImage(
           fit: BoxFit.fitWidth,
           image: AssetImage('assets/ui_14/images/Rectangle 818.png'),
