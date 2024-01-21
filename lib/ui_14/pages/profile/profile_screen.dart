@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/profile/profile_edit_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/profile/profile_menu.dart';
-import 'package:modul_4_homework_obidxon/ui_14/widget/arrow_icon.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/circle_button.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/line_border.dart';
+import 'package:modul_4_homework_obidxon/ui_14/widget/my_app_bar2.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/rich_text_2.dart';
 
 class ProfileScreenUi14 extends StatelessWidget {
@@ -23,6 +24,16 @@ class ProfileScreenUi14 extends StatelessWidget {
               MyAppBar2(
                 title: "Profile",
                 child: CircleSmallButtonUi14(
+                  press: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return ProfileEditScreen();
+                        },
+                      ),
+                    );
+                  },
                   height: 44,
                   width: 44,
                   backgroundColor: kLightGrayColor,
@@ -31,20 +42,7 @@ class ProfileScreenUi14 extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 30),
-              Container(
-                height: 96,
-                width: 96,
-                // alignment: ,
-                decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: Color.fromRGBO(255, 234, 223, 1),
-                  image: DecorationImage(
-                    fit: BoxFit.fitWidth,
-                    alignment: Alignment.bottomCenter,
-                    image: AssetImage("assets/ui_14/images/Group.png"),
-                  ),
-                ),
-              ),
+              ProfileCircleImage(),
               SizedBox(height: 10),
               Text(
                 "Leonardo",
@@ -175,28 +173,26 @@ class ProfileScreenUi14 extends StatelessWidget {
   }
 }
 
-class MyAppBar2 extends StatelessWidget {
-  final String title;
-  final Widget child;
-  const MyAppBar2({
+class ProfileCircleImage extends StatelessWidget {
+  const ProfileCircleImage({
     super.key,
-    required this.title,
-    required this.child,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        arrowIcon(context),
-        Text(
-          title,
-          style: kSfUiSytle.copyWith(
-              fontSize: 18, fontWeight: FontWeight.w600, color: kTextColorUi14),
+    return Container(
+      height: 96,
+      width: 96,
+      // alignment: ,
+      decoration: const BoxDecoration(
+        shape: BoxShape.circle,
+        color: Color.fromRGBO(255, 234, 223, 1),
+        image: DecorationImage(
+          fit: BoxFit.fitWidth,
+          alignment: Alignment.bottomCenter,
+          image: AssetImage("assets/ui_14/images/Group.png"),
         ),
-        child
-      ],
+      ),
     );
   }
 }

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/popular_places/popular_place_card.dart';
-import 'package:modul_4_homework_obidxon/ui_14/pages/profile/profile_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/sing/compotations/email_field_container.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/line_border.dart';
+import 'package:modul_4_homework_obidxon/ui_14/widget/my_app_bar2.dart';
 
 class SearchScreenUi14 extends StatelessWidget {
   const SearchScreenUi14({super.key});

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
-import 'package:modul_4_homework_obidxon/ui_14/pages/message/chat_card.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/notification/notification_card.dart';
-import 'package:modul_4_homework_obidxon/ui_14/pages/profile/profile_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/line_border.dart';
+import 'package:modul_4_homework_obidxon/ui_14/widget/my_app_bar2.dart';
 
 class NotificationScreen extends StatelessWidget {
   const NotificationScreen({super.key});
