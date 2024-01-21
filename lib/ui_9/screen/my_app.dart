@@ -9,13 +9,14 @@ class MyAppUi9 extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      
       theme: ThemeData(
         primaryColor: kPrimaryColorUi9,
         scaffoldBackgroundColor: Colors.white,
         appBarTheme: AppBarTheme(color: kPrimaryColorUi9),
         textTheme: TextTheme(
           bodyLarge: TextStyle(color: kSecondaryColorUi9),
-          bodyMedium: TextStyle(color: kSecondaryColorUi9)
+          bodyMedium: TextStyle(color: kSecondaryColorUi9),
         )
       ),
       home: HomePageUi9(),

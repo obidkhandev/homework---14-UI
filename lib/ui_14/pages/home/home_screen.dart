@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/details/details_screen.dart';
+import 'package:modul_4_homework_obidxon/ui_14/pages/notification/notification_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/notifications.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/person_circle.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/travel_card.dart';
@@ -50,7 +51,18 @@ class _HomeScreenUi14State extends State<HomeScreenUi14> {
                     ],
                   ),
                 ),
-                MyNotifications()
+                GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return NotificationScreen();
+                          },
+                        ),
+                      );
+                    },
+                    child: MyNotifications())
               ],
             ),
             const SizedBox(height: 20),
@@ -155,4 +167,3 @@ class _HomeScreenUi14State extends State<HomeScreenUi14> {
     );
   }
 }
-

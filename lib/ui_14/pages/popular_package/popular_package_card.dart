@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/locationName_icon.dart';
-import 'package:modul_4_homework_obidxon/ui_14/widget/location_and_profiles.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/rating.dart';
 
 class PopularPackageCard extends StatelessWidget {

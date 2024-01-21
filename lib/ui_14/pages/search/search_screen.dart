@@ -3,7 +3,6 @@ import 'package:modul_4_homework_obidxon/ui_14/compotations.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/popular_places/popular_place_card.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/profile/profile_screen.dart';
 import 'package:modul_4_homework_obidxon/ui_14/pages/sing/compotations/email_field_container.dart';
-import 'package:modul_4_homework_obidxon/ui_14/widget/arrow_icon.dart';
 import 'package:modul_4_homework_obidxon/ui_14/widget/line_border.dart';
 
 class SearchScreenUi14 extends StatelessWidget {
@@ -35,7 +34,7 @@ class SearchScreenUi14 extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 10),
-              EmailFieldContainer(
+              const EmailFieldContainer(
                 child: TextField(
                   decoration: InputDecoration(
                       border: InputBorder.none,
@@ -69,7 +68,7 @@ class SearchScreenUi14 extends StatelessWidget {
                 height: size.height,
                 width: double.infinity,
                 child: GridView(
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
                     mainAxisExtent: 230,
                     mainAxisSpacing: 20,
